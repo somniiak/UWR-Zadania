@@ -1,5 +1,6 @@
 from losowanie_fragmentow import losuj_fragment
 from random import choice
+from random import shuffle
 
 # Demonstracja działania funkcji
 # w treści zadania.
@@ -37,8 +38,9 @@ def losuj_haslo(n):
         while len(frag) != 4:
             frag = losuj_fragment()
         haslo.append(frag)
+    shuffle(haslo)
     return ''.join(haslo)
-    
+
 
 for i in range(10):
     print(losuj_haslo(8))
