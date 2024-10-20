@@ -10,7 +10,7 @@ m = 10
 # siódemkami w następnych kombinacjach.
 nums = [list(i) for i in itertools.product('0123456789', repeat=(m - n))]
 
-# Kombinacje (m - n) liczb z n siódemkami
+# Permutacje (m - n) liczb z n siódemkami
 # np. ['3, '5', '2', '7777777']
 results = []
 for num in nums:
