@@ -6,7 +6,7 @@ n = 7
 m = 10
 
 
-# Pary (m - n) liczb do wypełnienia miejsc poza
+# Grupy (m - n) liczb do wypełnienia miejsc poza
 # siódemkami w następnych kombinacjach.
 nums = [list(i) for i in itertools.product('0123456789', repeat=(m - n))]
 
