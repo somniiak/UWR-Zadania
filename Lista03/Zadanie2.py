@@ -7,7 +7,7 @@ m = 10
 
 
 # Grupy (m - n) liczb do wypełnienia miejsc poza
-# siódemkami w następnych kombinacjach.
+# siódemkami w następnych obliczeniach.
 nums = [list(i) for i in itertools.product('0123456789', repeat=(m - n))]
 
 # Permutacje (m - n) liczb z n siódemkami
