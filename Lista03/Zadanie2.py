@@ -3,7 +3,7 @@ import math
 
 def isPrime(n):
     while n > 1:
-        # Optymalizacja funkcji: od N to sqrt(N)
+        # Optymalizacja funkcji: od N do sqrt(N)
         # zamiast (N // 2) + 1
         for i in range(2, int(math.sqrt(n)) + 1):
             if n % i == 0:
