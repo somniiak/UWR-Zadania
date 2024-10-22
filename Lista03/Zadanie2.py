@@ -1,4 +1,14 @@
 import itertools
+import math
+
+def isPrime(n):
+    while n > 1:
+        # Optymalizacja funkcji: od N to sqrt(N)
+        # zamiast (N // 2) + 1
+        for i in range(2, int(math.sqrt(n)) + 1):
+            if n % i == 0:
+                return False
+        return True
 
 # n - liczba siódemek
 # m - długość liczby
@@ -15,7 +25,7 @@ nums = [list(i) for i in itertools.product('0123456789', repeat=(m - n))]
 results = []
 for num in nums:
     num.append('7' * n)
-    num = [''.join(i) for i in itertools.permutations(num) if i[0] != '0']
+    num = [''.join(i) for i in itertools.permutations(num) if i[0] != '0' and isPrime(int(''.join(i)))]
     for l in num:
         results.append(l)
 
