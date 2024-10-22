@@ -15,12 +15,11 @@ def isPrime(n):
 n = 7
 m = 10
 
-
-# Grupy (m - n) liczb do wypełnienia miejsc poza
-# siódemkami w następnych obliczeniach.
-# Zastosowana optymalizacja polega na usunięciu zestawów
-# zawierających te same liczby bo w permutacjach wyjdzie
-# i tak to samo.
+# Grupy (m - n) liczb do wypełnienia miejsc
+# poza siódemkami w następnych obliczeniach.
+# Zastosowana optymalizacja polega na usunięciu
+# zestawów zawierających te same liczby bo w
+# permutacjach wyjdzie i tak to samo.
 nums = set([''.join(sorted(i)) for i in itertools.product('0123456789', repeat=(m - n))])
 nums = [list(i) for i in nums]
 
