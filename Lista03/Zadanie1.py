@@ -14,5 +14,5 @@ def isPrime(n):
                 return False
         return True
 
-liczby = [(i, isPrime(i)) for i in range(100001) if isLucky(i)]
+liczby = [i for i in range(100001) if isLucky(i) and isPrime(i)]
 print(liczby, len(liczby))
