@@ -12,4 +12,6 @@ palindromy = lambda a, b: [i for i in primeRange(b) if i >= a and str(i) == str(
 
 x = primeRange(10 ** 6)
 print(x)
-#print(palindromy(500, 1000))
+
+x = palindromy(500, 1000)
+print(x)
