@@ -9,4 +9,5 @@ while True:
     elif num % 2 == 0:
         x.append(num)
 
-print(x[2:], sum(x[2:]))
+x = x[2:]
+print(x, sum(x))
