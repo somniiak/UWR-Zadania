@@ -1,9 +1,6 @@
-from random import choice
+import numpy as np
 
-def randperm(n):
-    nums = list(range(n))
-    nums = [choice(nums) for i in range(n)]
-    return nums
+randperm = lambda n : np.random.permutation(np.array(list(range(n)))).tolist()
 
 for i in range(10):
     print(f'Permutacje {i}:')
