@@ -17,7 +17,7 @@ def drawS():
     t.forward(k)
 
 # Liczba do namalowania
-n = 69420
+n = 7760
 lines = wypisz(n)
 # Dlugosc boku
 k = 30
