@@ -1,4 +1,5 @@
 from duze_cyfry import daj_cyfre
+from random import randint
 from random import choice
 import turtle as t
 
@@ -17,7 +18,7 @@ def drawS():
     t.forward(k)
 
 # Liczba do namalowania
-n = 7760
+n = randint(1000, 9999)
 lines = wypisz(n)
 # Dlugosc boku
 k = 30
