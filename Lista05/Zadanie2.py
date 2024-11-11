@@ -22,6 +22,7 @@ n = 20
 k = 30
 
 # Przygotowanie
+t.Screen().tracer(10)
 t.penup()
 t.goto(-300, 300)
 
@@ -33,4 +34,5 @@ for i in range(n):
         drawS()
     t.penup()
     t.goto(t.pos() - (n * k, k))
+t.Screen().update()
 t.Screen().exitonclick()
