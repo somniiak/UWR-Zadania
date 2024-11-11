@@ -29,10 +29,11 @@ colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink',
 # Dlugosc linijki
 l = len(lines[0]) * k
 # Losuj kolory
-colors = [choice(colors) for i in range(len(str(n)))]
+colors = [colors.pop(choice(list(range(len(colors))))) for i in range(len(str(n)))]
 # Rozpocznij w widocznym miejscu
+t.Screen().tracer(1, 2)
 t.penup()
-t.goto(-500, 100)
+t.goto(-350, 100)
 
 t.speed('fastest')
 for line in lines:
@@ -49,4 +50,5 @@ for line in lines:
         drawS()
         i += 1
     t.goto(t.pos() - (l, k))
+t.Screen().update()
 t.Screen().exitonclick()
