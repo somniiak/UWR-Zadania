@@ -26,6 +26,8 @@ def rysuj(x = 0, y = 0, bok = 150, glebokosc = 0):
                     podroz(t.pos()[0], y - (bok / 3) * i)
                     rysuj(t.pos()[0], t.pos()[1], bok / 3, glebokosc - 1)
 
+t.Screen().tracer(8)
 t.speed('fastest')
-rysuj(0, 0, 150, 2)
-input()
+rysuj(-300, 300, 600, 3)
+t.Screen().update()
+t.Screen().exitonclick()
