@@ -84,7 +84,7 @@ def wpisz_cyfre(n):
     for i, line in enumerate(lines):
         for j, char in enumerate(line):
             if char == '#':
-                grid[x + i, y + j] = color_index
+                grid[x + i][y + j] = color_index
 
 
 
@@ -95,7 +95,7 @@ liczby = 100
 # Wymiary sitaki
 rows, columns = 40, 40
 # Siatka stringów
-grid = np.empty((rows, columns), dtype=str)
+grid = [['' for _ in range(columns)] for _ in range(rows)]
 # Dostępne kolory
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'magenta', 'brown']
 
