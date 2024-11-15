@@ -30,7 +30,7 @@ def czy_miejsce_wolne(pos, lines):
     for i, line in enumerate(lines):
         for j, char in enumerate(line):
             if char == '#':
-                if grid[x + i][y + j]:
+                if grid[x + i][y + j] != '':
                     return False
     return True
 
@@ -45,7 +45,7 @@ def znajdz_sasiednie_kolory(pos, lines):
                 for dx, dy in directions:
                     nx, ny = x + i + dx, y + j + dy
                     try:
-                        if grid[nx][ny]:
+                        if grid[nx][ny] != '':
                             kolory.add(int(grid[nx][ny]))
                     except IndexError:
                         pass
@@ -116,7 +116,7 @@ for i in range(liczby):
 # Malowanie niepustych elementów siatki
 for i in range(rows):
     for j in range(columns):
-        if grid[i][j]:
+        if grid[i][j] != '':
             x = offset_x + k * j
             y = offset_y - k * i
             podroz(x, y)
