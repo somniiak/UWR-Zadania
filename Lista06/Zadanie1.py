@@ -1,6 +1,5 @@
 from random import randint, choice
 from duze_cyfry import daj_cyfre
-import numpy as np
 import turtle as t
 
 
@@ -59,11 +58,13 @@ def wpisz_cyfre(n):
 
     # Sprawdzanie czy można wpisać liczbę w wylosowane
     # miejsce. Limit prób, aby zapobiec zapętleniu.
-    for i in range(20):
+    for i in range(10):
         pos = losuj_pozycje()
         if czy_miejsce_wolne(pos, lines):
             break
     else:
+        global skipped
+        skipped += 1
         return
     
     # Sprawdzanie z jakimi kolorami sąsiaduje liczba i
@@ -87,7 +88,6 @@ def wpisz_cyfre(n):
                 grid[x + i][y + j] = color_index
 
 
-
 # Rozmiar boku kwadratu
 k = 20
 # Ilość liczb w siatce:
@@ -98,6 +98,8 @@ rows, columns = 40, 40
 grid = [['' for _ in range(columns)] for _ in range(rows)]
 # Dostępne kolory
 colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'pink', 'magenta', 'brown']
+# Liczby pominięte (informacja)
+skipped = 0
 
 # Przygotowanie rysowania
 t.tracer(0, 1)
@@ -114,7 +116,6 @@ for i in range(liczby):
 # Malowanie niepustych elementów siatki
 for i in range(rows):
     for j in range(columns):
-        # Jeśli komórka nie jest pusta - maluj
         if grid[i][j]:
             x = offset_x + k * j
             y = offset_y - k * i
@@ -122,4 +123,6 @@ for i in range(rows):
             color_index = int(grid[i][j])
             color = colors[color_index]
             kwadracik(k, color)
+print('Namalowano:', liczby - skipped)
+print('Pominieto:', skipped)
 t.done()
