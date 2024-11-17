@@ -54,6 +54,7 @@ def znajdz_sasiednie_kolory(pos, lines):
 
 def wpisz_cyfre(n):
     global grid
+    global skipped
     lines = daj_cyfre(n)
 
     # Sprawdzanie czy można wpisać liczbę w wylosowane
@@ -63,7 +64,6 @@ def wpisz_cyfre(n):
         if czy_miejsce_wolne(pos, lines):
             break
     else:
-        global skipped
         skipped += 1
         return
     
@@ -77,6 +77,7 @@ def wpisz_cyfre(n):
     try:
         color_index = choice(dostepne_kolory)
     except IndexError:
+        skipped += 1
         return
 
     # Malowanie liczby w siatce w postaci
