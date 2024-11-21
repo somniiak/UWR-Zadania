@@ -18,7 +18,7 @@ with open('niespodzianka.txt', 'r') as f:
     lines = [[eval(j) for j in i.strip().split()] for i in f.readlines()]
 
 k = 15
-t.tracer(1000)
+t.tracer(0, 0)
 t.speed('fastest')
 t.colormode(255)
 
