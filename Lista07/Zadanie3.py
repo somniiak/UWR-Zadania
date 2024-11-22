@@ -20,5 +20,5 @@ for line in lines:
         res.append((len(re.sub(r'\W+', '', line)), line))
 res = sorted(set(res), reverse=True)
 
-for i in range(5):
+for i in range(4):
     print(f'...{res[i][1]}...')
