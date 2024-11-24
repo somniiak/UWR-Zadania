@@ -8,7 +8,6 @@ k = 15
 
 i = 0
 grid = [['#'] * n] * n
-print(grid)
 tracer(10)
 goto(-n * k // 2, n * k // 2)
 speed('fastest')
