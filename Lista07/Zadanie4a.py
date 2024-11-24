@@ -7,13 +7,12 @@ n = 30
 k = 15
 
 i = 0
-grid = [['#'] * n] * n
 tracer(10)
 goto(-n * k // 2, n * k // 2)
 speed('fastest')
 murek('1f', k)
-for rows in grid:
-    for items in rows:
+for _ in range(n):
+    for _ in range(n):
         p = str(randint(1, 6))
         murek(p + 'f', k)
     i += 1
