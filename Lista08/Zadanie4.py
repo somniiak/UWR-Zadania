@@ -18,7 +18,7 @@ def getColor(height, maxHeight, minHeight):
     hg = height - minHeight
     if mx == 0:
         return 0  # Gdy wszystkie wartości w macierzy są takie same
-    index = int((hg / mx) * (len(kolory) - 1))
+    index = int(round((hg / mx) * (len(kolory) - 1), 0))
     return index
 
 
@@ -51,11 +51,11 @@ grid = [[0 for _ in range(columns)] for _ in range(rows)]
 kolory = ['green', (127, 255, 0), 'yellow', 'orange', 'red', (127, 0, 0)]
 
 # Losowanie niezerowych wartości
-for _ in range(5000):
-    grid[randint(0, rows - 1)][randint(0, columns - 1)] = 10000
+for _ in range(1300):
+    grid[randint(0, rows - 1)][randint(0, columns - 1)] = randint(500, 2500)
 
 # Losowanie średniej ważonej
-for _ in range(int(40 * (rows * columns))):
+for _ in range(int(33 * (rows * columns))):
     x = randint(0, rows - 1)
     y = randint(0, columns - 1)
     grid[x][y] = meanWeighted(x, y)
