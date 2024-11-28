@@ -16,7 +16,6 @@ for x in open('pol_ang.txt'):
         continue    
     pol, ang = L
     pol_ang[pol].append(ang)
-pol_ang = Counter(pol_ang)
 
 def tlumacz(polskie):
     wynik = []

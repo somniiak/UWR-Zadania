@@ -24,9 +24,9 @@ def getColor(height, maxHeight, minHeight):
 
 def meanWeighted(x, y):
     weights = [
-        [1, 2, 1],  # Wagi dla sąsiadów
-        [2, 4, 2],  # Punkt centralny (x, y) ma największą wagę
-        [1, 2, 1],
+        [2, 2, 2],  # Wagi dla sąsiadów
+        [2, 3, 2],  # Punkt centralny (x, y) ma największą wagę
+        [2, 2, 2],
     ]
     weighted_sum = 0
     weight_sum = 0
@@ -51,8 +51,8 @@ grid = [[0 for _ in range(columns)] for _ in range(rows)]
 kolory = ['green', (127, 255, 0), 'yellow', 'orange', 'red', (127, 0, 0)]
 
 # Losowanie niezerowych wartości
-for _ in range(1300):
-    grid[randint(0, rows - 1)][randint(0, columns - 1)] = randint(500, 2500)
+for _ in range(1500):
+    grid[randint(0, rows - 1)][randint(0, columns - 1)] = randint(1500, 2500)
 
 # Losowanie średniej ważonej
 for _ in range(int(33 * (rows * columns))):
