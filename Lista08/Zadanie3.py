@@ -1,6 +1,6 @@
 from random import choice, sample
 
-with open('popularne_slowa2023.txt', 'r') as f:
+with open('slowa.txt', 'r') as f:
     wordSet = set(map(str.strip, f))
 
 wordDict = {}
