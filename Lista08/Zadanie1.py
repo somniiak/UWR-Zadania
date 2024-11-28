@@ -30,7 +30,7 @@ def tlumacz(polskie):
             wynik.append('[?]')
     return ' '.join(wynik)
     
-zdanie = 'chłopiec z dziewczyna pójść do kino'.split()
-for i in range(5):
-    print (tlumacz(zdanie))            
+zdanie = 'chłopiec z dziewczyna pójść do kino'
+for i in range(1):
+    print (tlumacz(zdanie.split()))            
             
