@@ -16,7 +16,7 @@ def riddle(inputName):
 
     # Generowanie permutacji slow
     namePerms = []
-    for _ in range(99999):
+    for _ in range(999999):
         tempWord = shuffleWord(inputName)
         if tempWord[0] != ' ' and tempWord[-1] != ' ':
             tempWord = tempWord.split()
@@ -36,6 +36,6 @@ def riddle(inputName):
     namePerms = sorted([' '.join(perm) for perm in namePerms])
     return namePerms
 
-name = 'artur dzido'
+name = 'Maciej Boryna'
 res = riddle(name)
 print(res)
