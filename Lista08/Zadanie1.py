@@ -6,7 +6,7 @@ from collections import defaultdict as dd
 pol_ang = dd(lambda:[])
 
 with open('brown.txt', 'r') as f:
-    brownList = re.findall('\w+', f.read().lower())
+    brownList = re.findall(r'\w+', f.read().lower())
     brownDict = Counter(brownList)
 
 for x in open('pol_ang.txt'):

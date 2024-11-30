@@ -13,7 +13,7 @@ def riddle(inputName):
     shuffleWord = lambda word: ''.join(sample(word.lower(), len(word)))
     # Postoruj litery wyrazu
     setSorted = lambda word: ''.join(sorted(word))
-
+    
     # Generowanie permutacji slow
     namePerms = []
     for _ in range(999999):

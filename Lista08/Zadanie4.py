@@ -13,7 +13,6 @@ def kwadracik(k, color):
 
 
 def getColor(height, maxHeight, minHeight):
-    """Przelicz indeks koloru na podstawie wartości wysokości."""
     mx = maxHeight - minHeight
     hg = height - minHeight
     if mx == 0:
@@ -23,14 +22,11 @@ def getColor(height, maxHeight, minHeight):
 
 
 def meanWeighted(x, y):
-    weights = [
-        [2, 2, 2],  # Wagi dla sąsiadów
-        [2, 3, 2],  # Punkt centralny (x, y) ma największą wagę
-        [2, 2, 2],
-    ]
+    weights = [[2, 3, 2],
+               [3, 4, 3],
+               [2, 3, 2]]
     weighted_sum = 0
     weight_sum = 0
-    
     for i in range(-1, 2):  # Sprawdzanie sąsiadów w zakresie od -1 do 1
         for j in range(-1, 2):
             nx, ny = x + i, y + j
@@ -51,11 +47,11 @@ grid = [[0 for _ in range(columns)] for _ in range(rows)]
 kolory = ['green', (127, 255, 0), 'yellow', 'orange', 'red', (127, 0, 0)]
 
 # Losowanie niezerowych wartości
-for _ in range(1500):
-    grid[randint(0, rows - 1)][randint(0, columns - 1)] = randint(1500, 2500)
+for _ in range(400):
+    grid[randint(0, rows - 1)][randint(0, columns - 1)] = randint(2000, 2500)
 
 # Losowanie średniej ważonej
-for _ in range(int(33 * (rows * columns))):
+for _ in range(int(50 * (rows * columns))):
     x = randint(0, rows - 1)
     y = randint(0, columns - 1)
     grid[x][y] = meanWeighted(x, y)
