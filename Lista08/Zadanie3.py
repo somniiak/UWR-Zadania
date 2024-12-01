@@ -1,41 +1,39 @@
-from random import choice, sample
+from collections import Counter
+from itertools import combinations
 
-with open('slowa.txt', 'r') as f:
-    wordSet = set(map(str.strip, f))
+def load_word_dict(file):
+    """Wczytanie listy słów z pliku tekstowego."""
+    with open(file, 'r', encoding='utf-8') as f:
+        return [word.strip().lower() for word in f.readlines()]
 
-wordDict = {}
-for word in wordSet:
-    sortedWord = ''.join(sorted(word))
-    wordDict.setdefault(sortedWord, []).append(word)
-
-def riddle(inputName):
-    # Generuj permutacje slowa
-    shuffleWord = lambda word: ''.join(sample(word.lower(), len(word)))
-    # Postoruj litery wyrazu
-    setSorted = lambda word: ''.join(sorted(word))
+def riddle(input_name):
+    """Generowanie par słów-krzyżówek."""
+    char_name = input_name.lower().replace(' ', '') # Usunięcie spacji i zamiana na małe litery.
+    char_count = Counter(char_name) # Liczba wystąpień liter w imieniu i nazwisku.
     
-    # Generowanie permutacji slow
-    namePerms = []
-    for _ in range(999999):
-        tempWord = shuffleWord(inputName)
-        if tempWord[0] != ' ' and tempWord[-1] != ' ':
-            tempWord = tempWord.split()
-            firstWord = setSorted(tempWord[0])
-            secondWord = setSorted(tempWord[1])
-            if firstWord in wordDict and secondWord in wordDict:
-                firstWord = choice(wordDict[firstWord])
-                secondWord = choice(wordDict[secondWord])
-                tempWord = [firstWord, secondWord]
-                # Permutacje nie moga sie powtarzac
-                if not sorted(tempWord) in namePerms:
-                    if not sorted(tempWord, reverse=True) in namePerms:
-                        # Permutacja nie moze byc poczatkowym imieniem
-                        if sorted(tempWord) != inputName.lower().split():
-                            if sorted(tempWord, reverse=True) != inputName.lower().split():
-                                namePerms.append(tempWord)
-    namePerms = sorted([' '.join(perm) for perm in namePerms])
-    return namePerms
+    valid_words = [word for word in word_dict if not Counter(word) - char_count] # Pasujące słowa.
 
-name = 'Maciej Boryna'
-res = riddle(name)
-print(res)
+    pairs = set()
+    for word1, word2 in combinations(valid_words, 2): # Łączymy wszystkie dobre słowa w pary
+        if Counter(word1 + word2) == char_count: # Sprawdzamy czy znaki w obu wyrazach są równe tym w wyrazie początkowym.
+            if word1 not in char_name and word2 not in char_name: # Wejściowe dane nie mogą być w wyniku.
+                pairs.add(tuple(sorted((word1, word2)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
+    return sorted(pairs)
+
+# Ścieżka do pliku słownika
+word_file = 'popularne_slowa2023.txt'
+word_dict = load_word_dict(word_file)
+
+# Generowanie par krzyżówek
+name_original = 'Antek Boryna'
+name_pairs = riddle(name_original)
+
+# Ładne wypisywanie
+counter = 0
+for name_pair in name_pairs:
+    print(f'{name_pair[0]} {name_pair[1]}', end='')
+    counter += 1
+    if counter % 5:
+        print('', end=',\t')
+    else:
+        print()
