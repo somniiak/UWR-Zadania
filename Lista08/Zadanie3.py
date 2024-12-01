@@ -1,6 +1,17 @@
 from collections import Counter
 from itertools import combinations
 
+def pretty_print(word_pairs, length):
+    """Ładne wypisywanie wyników."""
+    counter = 0
+    for word_pair in word_pairs:
+        print(f'{word_pair[0]} {word_pair[1]}', end='')
+        counter += 1
+        if counter % length:
+            print('', end=',\t')
+        else:
+            print()
+
 def load_word_dict(file):
     """Wczytanie listy słów z pliku tekstowego."""
     with open(file, 'r', encoding='utf-8') as f:
@@ -28,12 +39,5 @@ word_dict = load_word_dict(word_file)
 name_original = 'Antek Boryna'
 name_pairs = riddle(name_original)
 
-# Ładne wypisywanie
-counter = 0
-for name_pair in name_pairs:
-    print(f'{name_pair[0]} {name_pair[1]}', end='')
-    counter += 1
-    if counter % 5:
-        print('', end=',\t')
-    else:
-        print()
+# Wypisywanie wyników (5 na wiersz)
+pretty_print(name_pairs, 5)
