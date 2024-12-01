@@ -28,4 +28,9 @@ word_dict = load_word_dict(word_file)
 name_original = 'Antek Boryna'
 name_pairs = riddle(name_original)
 
-print(*name_pairs)
+# Wypisywanie wyników
+counter = 1
+for name_pair in name_pairs:
+    print(*name_pair, end=',\t')
+    if not counter % 5: print()
+    counter += 1
