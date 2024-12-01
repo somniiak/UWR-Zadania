@@ -20,7 +20,7 @@ def riddle(input_name):
                 pairs.add(tuple(sorted((word1, word2)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
     return sorted(pairs)
 
-# Ścieżka do pliku słownika
+# Załadowanie słownika
 word_file = 'popularne_slowa2023.txt'
 word_dict = load_word_dict(word_file)
 
