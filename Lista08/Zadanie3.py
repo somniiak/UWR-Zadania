@@ -11,7 +11,7 @@ def riddle(input_name):
     char_name = input_name.lower().replace(' ', '') # Usunięcie spacji i zamiana na małe litery.
     char_count = Counter(char_name) # Liczba wystąpień liter w imieniu i nazwisku.
     
-    valid_words = [word for word in word_dict if Counter(word) <= char_count] # Pasujące słowa.
+    valid_words = [word for word in word_dict if Counter(word) < char_count] # Pasujące słowa.
 
     pairs = set()
     for word1, word2 in combinations(valid_words, 2): # Łączymy wszystkie dobre słowa w pary
