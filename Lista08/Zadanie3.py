@@ -16,7 +16,7 @@ def riddle(input_name):
     pairs = set()
     for word1, word2 in combinations(valid_words, 2): # Łączymy wszystkie dobre słowa w pary
         if Counter(word1 + word2) == char_count: # Sprawdzamy czy znaki w obu wyrazach są równe tym w wyrazie początkowym.
-            if word1 not in char_name and word2 not in char_name: # Wejściowe dane nie mogą być w wyniku.
+            if all(word not in input_name.lower().split() for word in (word1, word2)): # Wejściowe dane nie mogą być w wyniku.
                 pairs.add(tuple(sorted((word1, word2)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
     return sorted(pairs)
 

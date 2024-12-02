@@ -24,7 +24,7 @@ def riddle(input_name):
     for word1, word2 in combinations(valid_words.values(), 2): # Łączymy wszystkie dobre słowa w pary (wartości w słowniku).
         word3 = valid_words[setSorted(char_count - Counter(word1 + word2))] # Wybieramy trzecie słowo z niewykorzystanych znaków.
         if word3 and Counter(word1 + word2 + word3) == char_count: # Sprawdzamy że trzecie słowo istnieje i wszystkie wyrazy spełniają specyfikację.
-            if word1 not in char_name and word2 not in char_name and word3 not in char_name: # Wejściowe dane nie mogą być w wyniku.
+            if all(word not in input_name.lower().split() for word in (word1, word2, word3)): # Wejściowe dane nie mogą być w wyniku.
                 trios.add(tuple(sorted((word1, word2, word3)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
     return trios
 
