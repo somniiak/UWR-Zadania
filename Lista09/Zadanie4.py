@@ -1,4 +1,3 @@
-import time
 import random
 import turtle as t
 from copy import deepcopy
@@ -98,7 +97,7 @@ class Grid:
 
     def draw_grid(self):
         """Malowanie planszy."""
-        # Ustawienie opcji 
+        # Ustawienie opcji
         t.speed(0)
         t.tracer(0)
         t.hideturtle()
@@ -181,7 +180,7 @@ def play(old_grid, new_grid, y, x):
                 if enemy_value == 'k':
                     if current_value == 'p': enemy_defeat() # Papier bije kamień - przegrana wroga
                     elif current_value == 'n': enemy_victory() # Kamień bije nożyce - wygrana wroga
-                
+
                 elif enemy_value == 'p':
                     if current_value == 'k': enemy_victory() # Papier bije kamień - wygrana wroga
                     elif current_value == 'n': enemy_defeat() # Nożyce biją papier - przegrana wroga
@@ -199,10 +198,10 @@ def play(old_grid, new_grid, y, x):
 K = 40
 
 # Plik z planszą
-file = 'plansza.txt'
+FILE = 'plansza.txt'
 
 
-old_board = Grid(filename=file)
+old_board = Grid(filename=FILE)
 new_board = deepcopy(old_board)
 while True:
     for y in range(old_board.MY):
