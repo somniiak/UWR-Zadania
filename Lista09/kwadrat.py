@@ -1,6 +1,6 @@
 import turtle as t
 
-BOK = 15
+BOK = 25
 SX = -100
 SY = 0
 
