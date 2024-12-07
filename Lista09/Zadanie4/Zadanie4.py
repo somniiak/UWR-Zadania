@@ -1,7 +1,10 @@
-import random
 import turtle as t
+import random
+import os
+import sys
 from copy import deepcopy
-
+from terminal_colors import *
+from tabulate import tabulate
 
 def turtle_travel(kx, ky):
     """Względne przemieszczenie, bez rysowania."""
@@ -90,7 +93,10 @@ class Grid:
         for y in self.board:
             for x in y:
                 if x != '.':
-                    print(x.value, end='')
+                    if x.value == 'k': COLOR = BRIGHT_RED
+                    if x.value == 'n': COLOR = BRIGHT_BLUE
+                    if x.value == 'p': COLOR = BRIGHT_GREEN
+                    print(COLOR + x.value + RESET, end='')
                 else:
                     print(x, end='')
             print()
@@ -198,8 +204,11 @@ def play(old_grid, new_grid, y, x):
 K = 40
 
 # Plik z planszą
-FILE = 'plansza.txt'
+FILE = sys.argv[1]
 
+# Ustawienia
+DRAW_GRID = (1 if '--draw' in os.sys.argv else 0)
+PRINT_GRID = (1 if '--print' in sys.argv else 0)
 
 old_board = Grid(filename=FILE)
 new_board = deepcopy(old_board)
@@ -208,7 +217,12 @@ while True:
         for x in range(old_board.MX):
             play(old_board, new_board, y, x)
 
-    new_board.draw_grid()
+    if DRAW_GRID:
+        new_board.draw_grid()
+
+    if PRINT_GRID:
+        os.system('cls' if os.name == 'nt' else 'clear')
+        new_board.print_grid()
 
     old_board = deepcopy(new_board)
     new_board = deepcopy(old_board)
