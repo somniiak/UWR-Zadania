@@ -32,7 +32,7 @@ word_file = 'popularne_slowa2023.txt'
 word_dict = load_word_dict(word_file)
 
 # Generowanie par krzyżówek
-name_original = 'Bolesław Prus'
+name_original = 'Bolesław Leśmian'
 name_pairs = riddle(name_original)
 
 # Wypisywanie wyników
