@@ -16,5 +16,5 @@ word_file = 'popularne_slowa2023.txt'
 word_dict = load_word_dict(word_file)
 
 # Wyszukiwanie rymów
-word = wyszukaj_rym('przenica', 2)
+word = wyszukaj_rym('pszenica', 2)
 print(word)
