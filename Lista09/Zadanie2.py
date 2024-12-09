@@ -13,27 +13,26 @@ def riddle(input_name):
     
     setSorted = lambda x: ''.join(sorted(x)) # Klucze słownika jako posortowane znaki, niestety Counter jest niehaszowalny.
     
-    valid_words = defaultdict(lambda: [])
-    valid_words.update({ # Słownik z komprehensji jest dodawany do defaultdict, aby zachować funkcję default.
-        setSorted(word): word
-        for word in word_dict
-        if Counter(word) < char_count
-    })
-    
+    valid_words = defaultdict(lambda: set()) # Tablice słów zapisane pod ich mieszanką liter.
+    for word in word_dict:
+        if Counter(word) < char_count:
+            valid_words[setSorted(word)].add(word)
+    valid_list = set(word for words in valid_words.values() for word in words) # Lista spełnialnych słów.
+
     trios = set()
-    for word1, word2 in combinations(valid_words.values(), 2): # Łączymy wszystkie dobre słowa w pary (wartości w słowniku).
-        word3 = valid_words[setSorted(char_count - Counter(word1 + word2))] # Wybieramy trzecie słowo z niewykorzystanych znaków.
-        if word3 and Counter(word1 + word2 + word3) == char_count: # Sprawdzamy że trzecie słowo istnieje i wszystkie wyrazy spełniają specyfikację.
-            if all(word not in input_name.lower().split() for word in (word1, word2, word3)): # Wejściowe dane nie mogą być w wyniku.
-                trios.add(tuple(sorted((word1, word2, word3)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
-    return trios
+    for word1, word2 in combinations(valid_list, 2): # Łączymy wszystkie dobre słowa w pary (wartości w słowniku).
+        for word3 in valid_words[setSorted(char_count - Counter(word1 + word2))]: # Wybieramy trzecie słowo(a) z niewykorzystanych znaków.
+            if Counter(word1 + word2 + word3) == char_count: # Sprawdzamy czy wszystkie wyrazy spełniają specyfikację.
+                if all(word not in input_name.lower().split() for word in (word1, word2, word3)): # Wejściowe dane nie mogą być w wyniku.
+                    trios.add(tuple(sorted((word1, word2, word3)))) # Zapisujemy wyrazy jako posortowane krotki, żeby się nie powtarzały.
+    return sorted(trios)
 
 # Załadowanie słownika
 word_file = 'popularne_slowa2023.txt'
 word_dict = load_word_dict(word_file)
 
 # Generowanie par krzyżówek
-name_original = 'Bolesław Leśmian'
+name_original = 'Bolesław Prus'
 name_pairs = riddle(name_original)
 
 # Wypisywanie wyników
