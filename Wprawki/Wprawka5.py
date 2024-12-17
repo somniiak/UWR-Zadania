@@ -1,0 +1,1 @@
+kolko = lambda n, *duzeKolo: print('\n'.join([''.join(line) for line in [[' '] * ((duzeKolo[0] - n) // 2 ) + ['#' if ((x - n // 2) ** 2 + (y - n // 2) ** 2) ** 0.5 <= n / 2 else ' ' for x in range(n)] if duzeKolo else ['#' if ((x - n // 2) ** 2 + (y - n // 2) ** 2) ** 0.5 <= n / 2 else ' ' for x in range(n)] for y in range(n)]])); kolko(7, 15); kolko(9, 15); kolko(15)
