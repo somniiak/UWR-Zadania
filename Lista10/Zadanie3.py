@@ -7,8 +7,16 @@ def encode_num(word):
 def encode_chr(word):
     return [letters_num[number] for number in word]
 
-def riddle(words):
-    for word in words:
-        print(encode_num(word))
+def riddle(word):
+    # Podział na części
+    word = word.split()
+    word.remove('+')
+    word.remove('=')
 
-riddle(['mleko', 'bazylia'])
+    left = list(word[0])
+    right = list(word[1])
+    result = list(word[2])
+    return result
+
+word = riddle('send + more = money')
+print(word)

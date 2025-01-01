@@ -1,5 +1,4 @@
 from collections import defaultdict as dd
-from copy import deepcopy as dc
 
 alpha = 'aąbcćdeęfghijklłmnńoóprsśtuwyzźż'
 len_alpha = len(alpha)
