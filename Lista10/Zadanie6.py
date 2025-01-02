@@ -2,17 +2,15 @@ from random import choice, randint
 from re import finditer
 
 with open('imiona_meskie.txt', 'r', encoding='utf8') as f:
-    male_names = [f'^^{name.strip()}$' for name in f.readlines()]
+    male_names = [f'{name.strip()}$' for name in f.readlines()]
 
 with open('imiona_zenskie.txt', 'r', encoding='utf8') as f:
-    female_names = [f'^^{name.strip()}$' for name in f.readlines()]
+    female_names = [f'{name.strip()}$' for name in f.readlines()]
 
 def get_char(current, names):
     """Generowanie litery do dodanie."""
     letters = {l: 0 for l in 'aąbcćdeęfghijklłmnńoópqrsśtuvwxyzźż'}
     postfix = current[-2:] # Końcówka
-    i2 = postfix[0] # Przedostatnia litera
-    i1 = postfix[1] # Ostatnia litera
 
     # Wyszukiwanie pozycji całej końcówki zamiast
     # pojedyńczych liter, bo jest problem gdy
@@ -44,7 +42,7 @@ def generate_name(gender='m', min_length=4, max_mength=10):
         names = male_names + female_names
 
     # Losowanie pierwszych dwóch liter
-    name = choice(names)[2:4]
+    name = choice(names)[0:2]
     # Oczekiwana długość imienia
     desired_length = randint(min_length, max_mength)
     # Obecna długość imienia
