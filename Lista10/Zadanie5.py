@@ -19,9 +19,9 @@ def relation(start_set):
 
     def backtrack(partition, remaining_set):
         if not remaining_set:
-            if sorted(partition) not in res:
+            if sorted(list(map(list, partition))) not in [sorted(list(map(list, l))) for l in res]:
                 res.append(sorted(partition))
-        
+
         for subset in get_powerset(remaining_set):
             if subset and all(subset.isdisjoint(s) for s in partition):
                 backtrack(partition + [subset], remaining_set - subset)
@@ -31,6 +31,6 @@ def relation(start_set):
     return res
 
 
-nums = {1, 2}
+nums = {1, 2, 3, 4}
 nums = relation(nums)
 print(list(nums))
