@@ -1,6 +1,36 @@
-def rel(...):
-    return ...
+def get_powerset(start_set):
+    """Zbiór potęgowy."""
+    def powerset(lst):
+        if not lst:
+            return [[]]
+        
+        rest_powerset = powerset(lst[1:])
 
-nums = set([1,2,3,100])
-nums = rel(nums)
-print(nums)
+        includeFirst = [[lst[0]] + subset for subset in rest_powerset]
+        excludeFirst = rest_powerset
+
+        return includeFirst + excludeFirst
+
+    return [set(subset) for subset in powerset(list(start_set))]
+
+
+def relation(start_set):
+    res = []
+
+    def backtrack(partition, remaining_set):
+        if not remaining_set:
+            if sorted(partition) not in res:
+                res.append(sorted(partition))
+        
+        for subset in get_powerset(remaining_set):
+            if subset and all(subset.isdisjoint(s) for s in partition):
+                backtrack(partition + [subset], remaining_set - subset)
+
+    backtrack([], start_set)
+
+    return res
+
+
+nums = {1, 2}
+nums = relation(nums)
+print(list(nums))
