@@ -11,7 +11,7 @@ def to_num(word, perm):
     return ans
 
 def riddle(word):
-    """Znalezienie rozwiązania krzyżówki."""
+    """Znalezienie rozwiązania łamigłówki."""
     # Podział na części
     word = word.split()
     word.remove('+')
