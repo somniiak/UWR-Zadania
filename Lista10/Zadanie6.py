@@ -64,5 +64,5 @@ def generate_name(gender='m', min_length=4, max_mength=10):
 
     return name.title()
 
-imie = generate_name('f', 6, 9)
+imie = generate_name('n', 6, 9)
 print(imie)
