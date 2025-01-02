@@ -46,7 +46,7 @@ def generate_name(gender='m', min_length=4, max_mength=10):
     # Oczekiwana długość imienia
     desired_length = randint(min_length, max_mength)
     # Obecna długość imienia
-    current_length = 2
+    current_length = len(name)
 
     while current_length < desired_length:
         letter = get_char(name, names)
