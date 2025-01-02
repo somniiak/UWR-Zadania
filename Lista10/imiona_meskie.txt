@@ -4,7 +4,6 @@ tomasz
 andrzej
 paweł
 michał
-jan
 marcin
 jakub
 adam
@@ -216,10 +215,8 @@ florian
 rostyslav
 yauheni
 kevin
-iwo
 rudolf
 marceli
-leo
 leonid
 yury
 uladzimir
@@ -289,7 +286,6 @@ aleksandr
 jacob
 adolf
 anatol
-ion
 albin
 max
 wilhelm
@@ -468,7 +464,6 @@ nathaniel
 joshua
 ryan
 alessandro
-ivo
 zbysław
 felix
 cristian
@@ -908,7 +903,6 @@ massimo
 hakan
 ihnat
 stanley
-uwe
 julien
 salvatore
 nikolaos
@@ -1138,11 +1132,9 @@ akhmed
 tommy
 guillaume
 temuri
-or
 orhan
 miłosław
 prakash
-isa
 khalid
 timofey
 bernardo
@@ -1173,14 +1165,12 @@ syed
 lucjusz
 filippo
 timo
-gil
 willi
 zoran
 malkhazi
 janis
 jasper
 nils
-can
 arseniy
 dorin
 raymond
@@ -1209,7 +1199,6 @@ sandeep
 marlon
 miraslau
 niklas
-zvi
 mansur
 gurami
 chris
@@ -1219,7 +1208,6 @@ shamil
 tamazi
 fatih
 nijat
-wei
 petar
 avraham
 radion
@@ -1270,14 +1258,12 @@ mariano
 azat
 eitan
 zachar
-jun
 hector
 quang
 timofii
 darek
 otton
 ganesh
-ram
 jacques
 aiden
 jaroslaw
@@ -1318,7 +1304,6 @@ mate
 yosef
 marcjan
 xawier
-ari
 aksel
 ezequiel
 matwij
