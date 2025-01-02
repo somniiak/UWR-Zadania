@@ -43,7 +43,7 @@ def generate_name(gender='m', min_length=4, max_mength=10):
     elif gender == 'n':
         names = male_names + female_names
 
-    # Losowanie pierwszych dwóch liter    
+    # Losowanie pierwszych dwóch liter
     name = choice(names)[2:4]
     # Oczekiwana długość imienia
     desired_length = randint(min_length, max_mength)
@@ -53,16 +53,16 @@ def generate_name(gender='m', min_length=4, max_mength=10):
     while current_length < desired_length:
         letter = get_char(name, names)
 
-        # Obsługa rzadkiego przypadku gdy
-        # nie będzie żadnych pasujących liter.
+        # Obsługa przypadku gdy nie będzie
+        # żadnych pasujących liter.
         if letter:
-            name += get_char(name, names)
+            name += letter
             current_length += 1
         else:
-            name = name[:-1] 
+            name = name[:-1]
             current_length -= 1
 
     return name.title()
 
-imie = generate_name('f', 5, 7)
+imie = generate_name('f', 6, 9)
 print(imie)
