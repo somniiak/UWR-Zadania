@@ -1,13 +1,17 @@
-letters_chr = {char: idx for idx, char in enumerate('aąbcćdeęfghijklłmnńoóprsśtuwyzźż')}
-letters_num = {idx: char for idx, char in enumerate('aąbcćdeęfghijklłmnńoóprsśtuwyzźż')}
+from itertools import permutations
 
-def encode_num(word):
-    return [letters_chr[letter] for letter in word]
+def to_num(word, perm):
+    """Zamiana wyrazu na liczbę."""
+    ans = 0
 
-def encode_chr(word):
-    return [letters_num[number] for number in word]
+    for i in range(len(word)):
+        ans *= 10
+        ans += perm[word[i]]
+    
+    return ans
 
 def riddle(word):
+    """Znalezienie rozwiązania krzyżówki."""
     # Podział na części
     word = word.split()
     word.remove('+')
@@ -16,7 +20,22 @@ def riddle(word):
     left = list(word[0])
     right = list(word[1])
     result = list(word[2])
-    return result
 
-word = riddle('send + more = money')
+    letters = set(''.join(word))
+
+    # Możliwe przypisania liczb jako permutacje
+    for perm in permutations(range(10), len(letters)):
+        # Przypisanie liczb literom
+        perm = dict(zip(letters, perm))
+
+        lft = to_num(left, perm)
+        rgt = to_num(right, perm)
+        res = to_num(result, perm)
+
+        if lft + rgt == res:
+            return perm
+
+    return None
+
+word = riddle('ciacho + ciacho = nadwaga')
 print(word)
