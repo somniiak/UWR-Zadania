@@ -7,8 +7,8 @@ def to_num(word):
     res = []
     for idx in range(len(word) - 1):
         cur = alpha.index(word[idx])
-        nex = alpha.index(word[idx + 1])
-        res.append((nex - cur) % len_alpha)
+        nxt = alpha.index(word[idx + 1])
+        res.append((nxt - cur) % len_alpha)
     return tuple(res)
 
 with open('popularne_slowa2023.txt', 'r') as f:
