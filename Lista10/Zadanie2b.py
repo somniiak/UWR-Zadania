@@ -23,7 +23,7 @@ for k, v in valid.items():
     if len(v) >= 2:
         res[len(k) + 1].append(v)
 
-for k, v in res.items():
+for k, v in sorted(res.items()):
     print(f'{k}: ', end=' ')
     for values in v:
         print(values, end=',')
