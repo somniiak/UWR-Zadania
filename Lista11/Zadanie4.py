@@ -56,14 +56,26 @@ for sim in old_sims:
     for p in sim:
         tsim.append(('-'.join(sorted([i[0] for i in p])), sum([i[1] for i in p])))
     new_sims.append(tsim)
-new_sims = [dhondt(sim) for sim in new_sims]
+new_sims = [dict(dhondt(sim)) for sim in new_sims]
 
 
 max_party = max(parties, key=lambda x: x[1])[0]
 
-# Podpunkt A
-print('Podpunkt A:')
+
+print('\nPodpunkt A:')
+res = set()
 for sim in new_sims:
-    for j in sim:
-        if j == max(sim, key=lambda x: x[1]) and not list(re.finditer(max_party, j[0])):
-            print(sim, end=', ')
+    for k, v in sim.items():
+        if v == max(sim.values()) and max_party not in k:
+            res.add(', '.join([f'{k}: {v}' for k, v in sim.items()]))
+            continue
+for i in res: print(i)
+
+print('\nPodpunkt B:')
+res = set()
+for sim in new_sims:
+    for k, v in sim.items():
+        if v >= 230:
+            res.add(', '.join([f'{k}: {v}' for k, v in sim.items()]))
+            continue
+for i in res: print(i)
