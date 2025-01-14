@@ -1,3 +1,6 @@
+from collections import Counter
+import re
+
 def get_powerset(start_set):
     """Zbiór potęgowy."""
     def powerset(lst):
@@ -15,7 +18,6 @@ def get_powerset(start_set):
 
 
 def relation(start_set):
-    """Relacje równoważności."""
     res = []
 
     def backtrack(partition, remaining_set):
@@ -32,6 +34,36 @@ def relation(start_set):
     return res
 
 
-nums = {1, 2, 3, 4}
-nums = relation(nums)
-print(list(nums))
+def dhondt(parties):
+    quot = []
+    for res in parties:
+        party, votes = res
+        for n in range(1, 460 + 1):
+            quot.append((votes / n, party))
+    quot = sorted(quot, reverse=True)[:460]
+    return Counter([v[1] for v in quot])
+
+
+with open('wyniki.txt', 'r', encoding='utf-8-sig') as f:
+    parties = [i.strip().split(',') for i in f.readlines()]
+    parties = [(i[0], int(i[1])) for i in parties]
+
+old_sims = [[list(j) for j in i] for i in relation(set(parties))]
+
+new_sims = []
+for sim in old_sims:
+    tsim = []
+    for p in sim:
+        tsim.append(('-'.join(sorted([i[0] for i in p])), sum([i[1] for i in p])))
+    new_sims.append(tsim)
+new_sims = [dhondt(sim) for sim in new_sims]
+
+
+max_party = max(parties, key=lambda x: x[1])[0]
+
+# Podpunkt A
+print('Podpunkt A:')
+for sim in new_sims:
+    for j in sim:
+        if j == max(sim, key=lambda x: x[1]) and not list(re.finditer(max_party, j[0])):
+            print(sim, end=', ')
