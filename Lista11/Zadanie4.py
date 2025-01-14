@@ -1,5 +1,4 @@
 from collections import Counter
-import re
 
 def get_powerset(start_set):
     """Zbiór potęgowy."""
