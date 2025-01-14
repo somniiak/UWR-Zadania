@@ -5,7 +5,6 @@ with open('wyniki.txt', 'r', encoding='utf-8-sig') as f:
     lines = [(i[0], int(i[1])) for i in lines]
 
 M = 460 # Liczba mandatów do rozdzielenia
-N = len(lines) # Lizcba komitetów
 
 quot = []
 for line in lines:
@@ -14,5 +13,5 @@ for line in lines:
         quot.append((votes / n, party))
 
 quot = sorted(quot, reverse=True)[:M]
-results = Counter([v[1] for v in quot])
-print(results)
+for k, v in Counter([v[1] for v in quot]).items():
+    print(f"{k}: {v}")
