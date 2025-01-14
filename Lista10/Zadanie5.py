@@ -15,6 +15,7 @@ def get_powerset(start_set):
 
 
 def relation(start_set):
+    """Relacje równoważności."""
     res = []
 
     def backtrack(partition, remaining_set):
