@@ -40,18 +40,45 @@ def spiral(angle=0, size=300):
         t.left(59)
     t.update()
 
+def rotate_right():
+    global step
+    step = abs(step)
+
+def rotate_left():
+    global step
+    step = -abs(step)
+
+def increase_speed():
+    global size
+    size += 5
+
+def lower_speed():
+    global size
+    size -= 5
+
+def quit_program():
+    t.bye()
 
 t.colormode(255)
 t.bgcolor('black')
 t.speed('fastest')
 t.tracer(0)
 
+t.listen()
+t.onkey(rotate_right, 'Right')
+t.onkey(rotate_left, 'Left')
+t.onkey(increase_speed, 'Up')
+t.onkey(lower_speed, 'Down')
+t.onkey(quit_program, 'q')
+
 i = 0
+size = 650
+step = 5
 while True:
-    if i <= 650:
+    if i <= size:
         spiral(i, i)
     else:
-        spiral(i, 650)
+        spiral(i, size)
         colors = colors[1:] + colors[:1]
-    i += 5
+    i += step
 input()
