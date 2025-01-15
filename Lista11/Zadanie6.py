@@ -52,5 +52,6 @@ while True:
         spiral(i, i)
     else:
         spiral(i, 650)
+        colors = colors[1:] + colors[:1]
     i += 5
 input()
