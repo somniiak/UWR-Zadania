@@ -1,0 +1,32 @@
+        read  1      #Wczytaj a
+        read  2      #Wczytaj b
+        read  3      #Wczytaj c
+        load  1
+        sub   2
+        jgtz  skok1T #a > b
+        jump  skok1F #a <= b
+skok1T: load  1
+        store 4
+        load  2
+        store 1
+        load  4
+        store 2
+skok1F: load  2
+        sub   3
+        jgtz  skok2T #b > c
+        jump  skok2F #b <= c
+skok2T: load  2
+        store 4
+        load  3
+        store 2
+        load  4
+        store 3
+skok2F: load  1
+        add   2
+        sub   3
+        jgtz  skok3T #a + b > c
+        jump  skok3F #a + b <= c
+skok3T: write =1
+        halt  
+skok3F: write =0
+        halt  

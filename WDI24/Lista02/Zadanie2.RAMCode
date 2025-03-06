@@ -1,0 +1,10 @@
+read  1   #Wczytaj m
+read  2   #Wczytaj n
+load  1
+div   2
+write 0   #Wypisz w
+mult  =-1
+mult  2
+add   1
+write 0   #Wypisz r
+halt  

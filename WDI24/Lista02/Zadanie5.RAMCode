@@ -1,0 +1,27 @@
+       read  1
+       read  2
+       load  1
+       sub   2
+       jgtz  loop1
+       jump  swap
+swap: load  1
+       store 20
+       load  2
+       store 1
+       load  20
+       store 2
+       jump  loop1
+loop1: load  2
+       jgtz  loop2
+       write 1
+       halt  
+loop2: load  1
+       div   2
+       mult  =-1
+       mult  2
+       add   1
+       store 1
+       sub   2
+       mult  =-1
+       jgtz  swap
+       jump  loop1

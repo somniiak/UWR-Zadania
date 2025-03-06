@@ -1,0 +1,41 @@
+         load  =0
+         store 12      ## (12) i = 0
+         read  10      ## (10) n
+         load  10
+         store 11      ## (11) m = n
+loop1:   load  10
+         jzero end
+         read  ^0
+         load  ^0
+         div   =2
+         mult  =-2
+         add   ^10
+         jzero reszta0
+         jump  reszta1
+reszta0: load  12
+         add   =1
+         store 12
+         load  10
+         sub   =1
+         store 10
+         jump  loop1
+reszta1: load  12
+         sub   =1
+         store 12
+         load  10
+         sub   =1
+         store 10
+         jump  loop1
+end:     load  12      ##
+         mult  12      ## i = i * i
+         store 12      ##
+         load  11      ##
+         mult  11      ## m = m * m
+         store 11      ##
+         sub   12
+         jzero wynik1
+         jump  wynik0
+wynik1:  write =1
+         halt          #w
+wynik0:  write =0
+         halt  
