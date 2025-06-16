@@ -1,0 +1,12 @@
+Alfabet:
+    Σ = {0, 1}
+Wyrażenia regularne:
+    1. 0*1*
+    2. 0+1+
+    3. (ϵ | 0* | 1* | 1+0+)
+    4. (1∗00*)∗1*
+        1∗ – dowolna liczba jedynek przed zerami (może być brak jedynek).
+        00 – każde zero musi występować w parze.
+        (1∗00)∗ – możemy powtarzać wzór: dowolna liczba jedynek + para zer.
+        1∗ – dowolna liczba jedynek na końcu.
+    5. (0|10)*1?

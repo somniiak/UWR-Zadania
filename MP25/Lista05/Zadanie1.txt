@@ -1,0 +1,30 @@
+Alfabet:
+    Σ = {(, )}
+Zbiór produkcji:
+    P = {S → (S)S, S → (S, S → ε}
+Opis:
+    Produkcje: S → (S)S ∣ S→ϵ, sugerują, że język zawiera poprawnie zbalansowane
+    nawiasy. Każde wyrażenie SS może być puste (ϵϵ) lub mieć postać (S)S(S)S,
+    co oznacza, że każde poprawne wyrażenie składa się z par nawiasów i może być
+    kontynuowane.
+Niejednoznaczność:
+    Gramatyka jest niejednoznaczna, ponieważ istnieje ciąg, który można
+    wyprowadzić na więcej niż jeden sposób. Rozważmy ciąg "()":
+
+    Pierwsze wyprowadzenie:
+    1. S → (S)S
+    2. (S)S → ()S
+    3. ()S → ()
+
+    Drugie wyprowadzenie:
+    1. S → (S
+    2. (S -> ()
+
+    Jak widać, ciąg "()" ma dwa różne drzewa wyprowadzenia, co dowodzi
+    niejednoznaczności gramatyki.
+Jednoznaczna gramatyka:
+    S → SS | (S) | ε
+    
+    Ta gramatyka generuje ten sam język zrównoważonych nawiasów, ale jest
+    jednoznaczna, ponieważ dla każdego poprawnego ciągu nawiasów istnieje tylko
+    jedno drzewo wyprowadzenia.
