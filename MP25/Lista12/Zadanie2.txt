@@ -1,0 +1,49 @@
+# FUNKCJA REV
+# let rec rev xs =
+#   match xs with
+#   | [] -> []
+#   | h :: t -> (rev t) @ [h]
+
+Lemat pomocniczy - rev [x] = [x]:
+   rev [x] = rev (x :: []) = rev [] @ [x] = [] @ [x] = [x]
+
+Lemat pomocniczy - rev (a @ b) = (rev b) @ (rev a):
+    Baza indukcji (xs = []):
+        rev (xs @ ys) =
+        rev ([] @ ys) =
+        (rev ys) @ [] =
+        (rev ys) @ (rev []) = 
+        (rev ys) @ (rev xs)
+
+    Krok indukcyjny (x = h :: t):
+        Założenie indukcyjne:
+            rev (t @ ys) = rev ys @ rev t
+
+        rev ((h :: t) @ ys) =
+        rev (h :: (t @ ys)) =
+        rev (t @ ys) @ [h] =
+        (rev ys @ rev t) @ [h] =
+        rev ys @ (rev t @ [h]) =
+        rev ys @ rev (h :: t)
+
+    Zachodzi.
+
+
+Teza:
+    rev (rev xs) = xs
+
+Baza indukcji (xs = []):
+    rev (rev []) = rev [] = [] = xs
+
+Krok indukcyjny (xs = h :: t):
+    Założenie indukcyjne:
+        rev (rev t) = t
+    
+    rev (rev (h :: t)) =
+    rev (rev t @ [h]) =
+    rev [h] @ rev (rev t) =
+    [h] @ t =
+    h :: t =
+    xs
+
+    Zachodzi.

@@ -1,0 +1,14 @@
+Zasada indukcji dla relacji permutacji (~):
+    - Baza indukcji: [] ~ []
+    - Krok indukcyjny:
+        - ∀xs, ys. xs ~ ys ⇒ x::xs ~ x::ys
+        - ∀xs, ys, zs. (xs ~ ys) ^ (ys ~ zs) ⇒ (xs ~ zs)
+        - ∀x, y. ∀xs. x::y::xs ~ y::x::xs
+
+Aby pokazać, że własność P(xs, ys) zachodzi dla wszystkich
+list xs, ys takich, że xs ∼ ys, należy udowodnić:
+    - Baza indukcji: P([], [])
+    - Krok indukcyjny:
+        - ∀x. ∀xs, ys. P(xs, ys) ⇒ P(x::xs, x::ys)
+        - ∀xs, ys, zs. P(xs, ys) ^ P(ys, zs) ⇒ P(xs, zs)
+        - ∀x, y. ∀xs. P(x::y::xs, y::x::xs)

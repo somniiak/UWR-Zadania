@@ -1,0 +1,43 @@
+Algorytm (szybkie potęgowanie):
+{x = x ∧ n = n ∧ n ≥ 0}
+
+z := 1;
+while ( n > 0) {
+    if ( n % 2 == 1)
+        z := z * x ;
+    n := n / 2;
+    x := x * x ;
+}
+
+{z = x^n}
+
+1. Niezmiennik
+    - Proponowany niezmiennik: z * x^n = x0^n0
+    (Iloczyn aktualnej wartości z i x podniesionego do bieżącej wartości n
+    pozostaje równy oryginalnej wartości x0 podniesionej do n0.)
+
+2. Dowód niezmiennika
+    - Inicjalizacja (przed wejściem do pętli):
+    z := 1, x = x0, n = n0.
+    Wtedy: z * x^n = 1 * x0^n0 = x0^n0.
+    Niezmiennik jest prawdziwy.
+
+    - n nieparzyste:
+        * z := z * x, n := n / 2, x := x * x.
+        * Przed: z * x^n = x0^n0.
+        * Po: z_new = z * x, x_new = x^2, n_new = ⌊n/2⌋
+        * z_new * x_new^n_new = (z * x) * (x^2)^⌊n/2⌋
+        * Ponieważ n jest nieparzyste, n = 2k + 1, więc ⌊n/2⌋ = k i
+        z * x * x^2k = z * x^(2k + 1) = z * x^n
+        * Zatem: Z_new * x_new^n_new = z * x^n = x0^n0
+        * Niezmiennik zachowany.
+
+    - n parzyste:
+        * z się nie zmienia, x := x * x, n := n / 2
+        * Wtedy: z_new * x_new^n_new = z * (x ^ 2)^(n / 2) = z * x^n
+        * Niezmiennik zachowany.
+
+4. Warunek końcowy
+    * Pętla kończy się, gdy n = 0. Wtedy:
+    z * x^0 = x0^n0 => z = x0^n0.
+    * Czyli: {z = x^n} (gdzie x = x0, n = n0) zostaje spełnione.

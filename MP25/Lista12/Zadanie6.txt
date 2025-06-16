@@ -1,0 +1,21 @@
+type 'a tree =
+  | Leaf
+  | Node of 'a * 'a tree * 'a tree
+
+Niech P(T) będzie pewną własnością drzewa binarnego T.
+Aby udowodnić, że własność P(T) zachodzi dla każdego
+drzewa binarnego T, należy wykazać:
+
+- Baza indukcji:
+    Własność zachodzi dla pustego drzewa: P(Leaf)
+
+- Krok indukcyjny:
+    Jeśli własność zachodzi dla lewego i prawego poddrzewa,
+    to zachodzi również dla drzewa zbudowanego z tych poddrzew:
+    Dla dowolnego elementu x ∈ 'a, i dowolnych drzew L i R:
+    Jeśli P(L) i P(R), to P(Node(x, L, R))
+
+{
+  | P(Leaf)
+  | forall x, L, R. (P(L) ^ P(R)) => P(Node(x, L, R))
+} => forall t. P(T)

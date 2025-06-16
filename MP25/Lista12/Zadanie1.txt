@@ -1,0 +1,28 @@
+# FUNKCJA MAP
+# let rec map f =
+#   match f with
+#   | [] -> []
+#   | h :: t -> f h :: map f t
+
+Teza:
+    map f (map g xs) = map (fun x -> f (g x)) xs
+
+Baza indukcji (xs = []):
+    L = map f (map g []) = map f [] = []
+    R = map (fun x -> f (g x)) [] = []
+    Równość zachodzi.
+
+Krok indukcyjny (xs = h :: t):
+    Założenie indukcyjne:
+        map f (map g t) = map (fun x -> f (g x)) t
+
+    L = map f (map g (h :: t)) 
+        = map f (g h :: map g t)
+        = f (g h) :: map f (map g t)
+        = f (g h) :: map (fun x -> f (g x)) t  [z zał. ind.]
+
+    R = map (fun x -> f (g x)) (h :: t) 
+        = (fun x -> f (g x)) h :: map (fun x -> f (g x)) t
+        = f (g h) :: map (fun x -> f (g x)) t
+
+    Równość zachodzi.
