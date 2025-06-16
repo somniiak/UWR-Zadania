@@ -1,0 +1,166 @@
+Label {
+    color: $text;
+}
+
+Input {
+    dock: top;
+    height: 3;
+    border: solid $secondary 60%;
+}
+
+Input:focus {
+    border: solid $primary 70%;
+}
+
+#video_list {
+    width: 1fr;
+    height: 1fr;
+}
+
+#loading_indicator {
+    width: 1fr;
+    height: 1fr; 
+}
+
+/* PLAYER LOADER */
+PlayerLoader {
+    height: 10;
+    width: 100%;
+    dock: bottom;
+    border: round $secondary;
+    margin-bottom: 1;
+}
+
+#download_label {
+    width: 1fr;
+    height: 2;
+    text-align: center;
+}
+
+#download_spinner {
+    width: 1fr;
+    height: 1fr;
+    align: center top;
+}
+
+/* PLAYER MENU */
+PlayerMenu {
+    height: 10;
+    width: 100%;
+    dock: bottom;
+    border: round $secondary;
+    margin-bottom: 1;
+}
+
+#player_layout {
+    width: 100%;
+    align: left top;
+}
+
+#player_info {
+    width: 1fr;
+    height: 1fr;
+}
+
+#album_art {
+    height: 1fr;
+    width: 15;
+}
+
+#queue_placeholder {
+    height: 1fr;
+    width: 15;
+    align: center bottom;
+    content-align: center bottom;
+}
+
+#queue_info {
+    width: 1fr;
+    height: 1fr;
+    content-align: center bottom;
+}
+
+#queue_status {
+    width: 1fr;
+    height: 1fr;
+    text-align: center;
+    content-align: center bottom;
+}
+
+#clear_queue_button {
+    width: 1fr;
+    align: center bottom;
+    content-align: center bottom;
+}
+
+#remove_queue_button {
+    width: 1fr;
+    margin-bottom: 1;
+    align: center bottom;
+    content-align: center bottom;
+}
+
+/* 1 WARSTWA */
+#title_label {
+    width: 1fr;
+    height: 2;
+    text-style: bold;
+    text-align: center;
+    content-align: center bottom;
+}
+
+#channel_label {
+    width: 1fr;
+    height: 2;
+    text-style: italic;
+    text-align: center;
+    content-align: center top;
+}
+
+/* 2 WARSTWA */
+#player_progress {
+    width: 1fr;
+    height: 1fr;
+    align: center top;
+    content-align: center top;
+}
+
+#seek_bar {
+    width: 1fr;
+    height: 1fr;
+    align: center top;
+    content-align: center top;
+}
+
+#track_current_time, #track_total_time {
+    width: 7;
+    align: center top;
+    content-align: center top;
+}
+
+#progress_bar {
+    width: auto;
+    align: center top;
+    content-align: center top;
+}
+
+/* 3 WARSTWA */
+#player_controls {
+    width: 1fr;
+    height: 1fr;
+    align: center top;
+    content-align: center top;
+}
+
+#player_buttons {
+    width: 1fr;
+    height: 1fr;
+    align: center top;
+    content-align: center top;
+}
+
+#previous_track_button, #toggle_playback_button, #next_track_button {
+    width: 15;
+    align: center top;
+    content-align: center top;
+}

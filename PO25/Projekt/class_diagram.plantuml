@@ -1,0 +1,230 @@
+@startuml
+title YouTube Music Player - Diagram klas
+
+' Klasy zewnętrznego frameworka (Textual UI)
+package "Framework Textual" <<Cloud>> {
+    class App <<external>>
+    class Input <<external>>
+    class DataTable <<external>>
+    class LoadingIndicator <<external>>
+    class Static <<external>>
+    class Label <<external>>
+    class ProgressBar <<external>>
+    class Button <<external>>
+    class Container <<external>>
+    class Horizontal <<external>>
+    class Vertical <<external>>
+    class Footer <<external>>
+    class "textual_image.Image" as TextualImage <<external>>
+}
+
+' Biblioteki zewnętrzne 
+package "Biblioteki zewnętrzne" <<Cloud>> {
+    class pygame <<external>>
+    class sqlite3 <<external>>
+    class yt_dlp <<external>>
+    class PIL <<external>>
+    class requests <<external>>
+}
+
+' Klasy głównej aplikacji
+package "Komponenty UI" {
+    class PlayerProgress {
+        -current_time: Static
+        -progress_bar: ProgressBar
+        -total_time: Static
+        -duration: float
+        --
+        +compose(): void
+        +on_mount(): void
+        +update_track_info(): void
+        +update_progress(): async void
+    }
+
+    class PlayerControls {
+        -previous_track_button: Button
+        -toggle_button: Button
+        -next_track_button: Button
+        --
+        +compose(): void
+        +on_mount(): void
+        +update_button_states(): void
+        +on_button_pressed(event): async void
+    }
+
+    class PlayerMenu {
+        -album_art: TextualImage
+        -title_label: Label
+        -channel_label: Label
+        -player_progress: PlayerProgress
+        -player_controls: PlayerControls
+        -queue_info: QueueInfo
+        --
+        +compose(): void
+        +on_mount(): void
+        +update(): void
+    }
+
+    class PlayerLoader {
+        -download_label: Label
+        -download_spinner: ProgressBar
+        --
+        +compose(): void
+        +on_mount(): void
+        +update_progress(): void
+    }
+
+    class QueueInfo {
+        -queue_status: Static
+        -clear_button: Button
+        -remove_button: Button
+        --
+        +compose(): void
+        +on_mount(): void
+        +update_queue_info(): void
+        +on_button_pressed(event): async void
+    }
+
+    class SearchScreen {
+        +CSS_PATH: str
+        +BINDINGS: list
+        -theme: str
+        -search_bar: Input
+        -screen_footer: Footer
+        -video_list: DataTable
+        -player_menu: PlayerMenu
+        -player_loader: PlayerLoader
+        -loading_indicator: LoadingIndicator
+        --
+        +compose(): void
+        +on_mount(): void
+        +on_input_submitted(event): async void
+        +on_data_table_row_selected(event): async void
+        +action_toggle_playback(): void
+        +action_next_track(): async void
+        +action_previous_track(): async void
+        +action_add_to_queue(): void
+        +action_add_all_to_queue(): void
+        +play_next_track(): async void
+        +play_previous_track(): async void
+        +handle_track_finished(): async void
+        +initialize_player(video_id: str): async void
+    }
+}
+
+' System zarządzania kolejką
+package "System kolejki" {
+    class QueueManager {
+        -queue: list
+        -current_index: int
+        --
+        +__init__(): void
+        +add_track(video_id: str): void
+        +add_tracks(video_ids: list): void
+        +play_track(video_id: str): void
+        +next_track(): str
+        +previous_track(): str
+        +remove_track(index: int): str
+        +clear_queue(): void
+        +get_queue_info(): dict
+    }
+}
+
+' System audio
+package "System audio" {
+    class AudioServer {
+        -track_title: str
+        -track_channel: str
+        -track_duration: float
+        -track_path: str
+        -track_cover: str
+        -is_paused: bool
+        -is_stopped: bool
+        --
+        +init_track(video_id: str): void
+        +play_track(): void
+        +init_pygame(): void
+        +unpause_playback(): void
+        +pause_playback(): void
+        +stop_playback(): void
+        +has_finished(): bool
+        +playback_position(): float
+    }
+}
+
+' System bazy danych
+package "System bazy danych" {
+    class VideoDatabase {
+        +{static} db_path: str
+        +{static} _initialized: bool
+        --
+        +{static} _ensure_init(): void
+        +{static} add(video_id: str, title: str, channel: str, duration: float): void
+        +{static} get(video_id: str): dict
+    }
+}
+
+' Integracja z YouTube
+package "Integracja z YouTube" {
+    class YoutubeVideo {
+        +{static} progress_status: str
+        -video_id: str
+        -video_url: str
+        -thumbnail_url: str
+        -output_path: str
+        -thumbnail_path: str
+        --
+        +__init__(video_id: str): void
+        +download_thumbnail(): async void
+        +download_audio(): async void
+    }
+
+    class "<<function>>\nyoutube_search" as youtube_search_func {
+        +youtube_search(query: str, max_results: int): async list
+    }
+}
+
+' Funkcje pomocnicze
+package "Funkcje pomocnicze" {
+    class "<<function>>\nformat_duration" as format_duration_func {
+        +format_duration(duration: float): str
+    }
+}
+
+' Relacje dziedziczenia
+PlayerProgress --|> Static
+PlayerControls --|> Static
+PlayerMenu --|> Container
+PlayerLoader --|> Container
+QueueInfo --|> Static
+SearchScreen --|> App
+
+' Relacje kompozycji
+PlayerMenu *-- PlayerProgress : zawiera
+PlayerMenu *-- PlayerControls : zawiera
+PlayerMenu *-- QueueInfo : zawiera
+SearchScreen *-- PlayerMenu : zawiera
+SearchScreen *-- PlayerLoader : zawiera
+
+' Relacje użycia
+SearchScreen --> AudioServer : używa
+SearchScreen --> QueueManager : używa
+SearchScreen --> YoutubeVideo : tworzy
+SearchScreen ..> youtube_search_func : wywołuje
+SearchScreen ..> format_duration_func : wywołuje
+PlayerProgress --> AudioServer : monitoruje
+PlayerControls --> AudioServer : steruje
+PlayerLoader --> YoutubeVideo : monitoruje postęp
+QueueInfo --> QueueManager : zarządza
+AudioServer --> VideoDatabase : pobiera metadane
+youtube_search_func --> VideoDatabase : zapisuje metadane
+
+' Zewnętrzne zależności
+AudioServer --> pygame : używa
+VideoDatabase --> sqlite3 : używa
+YoutubeVideo --> yt_dlp : używa
+YoutubeVideo --> requests : pobiera miniaturki
+YoutubeVideo --> PIL : przetwarza obrazy
+PlayerMenu --> Image : używa do okładek albumów
+
+@enduml
