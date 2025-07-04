@@ -11,3 +11,6 @@ Semestr letni 2024/2025:
 - Kurs języka C++
 - Metody programowania
 - Programowanie obiektowe
+
+Senestr zimowy 2025/2026:
+- ?
