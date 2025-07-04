@@ -1,13 +1,13 @@
 Semestr zimowy 2024/2025:
-- Logika dla informatyków
 - Analiza matematyczna
-- Wstęp do informatyki
-- Kurs: Wstęp do programowania w Pythonie
 - Kurs: Podstawowy warsztat informatyka
+- Kurs: Wstęp do programowania w języku Python
+- Logika dla informatyków
+- Wstęp do informatyki
 
 Semestr letni 2024/2025:
 - Algebra
-- Metody programowania
+- Etyka dla myślących (w)
 - Kurs języka C++
+- Metody programowania
 - Programowanie obiektowe
-- Etyka dla myślących
