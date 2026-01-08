@@ -13,4 +13,9 @@ Semestr letni 2024/2025:
 - Programowanie obiektowe
 
 Senestr zimowy 2025/2026:
-- ?
+- Analiza numeryczna
+- Matematyka dyskretna (L)
+- Kurs rozszerzony języka Python
+- Kurs języka Java
+- Ochrona własności intelektualnej
+- WF (Circuit training)
