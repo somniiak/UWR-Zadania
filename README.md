@@ -17,5 +17,6 @@ Senestr zimowy 2025/2026:
 - Matematyka dyskretna (L)
 - Kurs rozszerzony języka Python
 - Kurs języka Java
+- Wybrane elementy praktyki projektowania oprogramowania
 - Ochrona własności intelektualnej
 - WF (Circuit training)
