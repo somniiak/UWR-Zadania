@@ -1,0 +1,31 @@
+.root {
+    -fx-font-family: "Segoe UI";
+}
+
+.secondary-container {
+    -fx-background-image: url("background.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: right bottom;
+    -fx-background-size: 180px;
+}
+
+.base-label-ten {
+ -fx-background-color: #CCC;
+ -fx-font-weight: bold;
+}
+
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c374d;
+    -fx-text-alignment: center;
+}
+
+.description-label {
+    -fx-font-size: 14px;
+    -fx-text-alignment: center;
+}
+
+.base-label {
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane fitToHeight="true" fitToWidth="true" styleClass="main-container" stylesheets="@calc-styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.calculator.CalculatorController">
+   <content>
+      <VBox alignment="CENTER" spacing="20.0" styleClass="secondary-container">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+         <Label styleClass="title-label" text="Konwerter pozycyjnych systemów liczbowych" textAlignment="CENTER" wrapText="true" />
+         <Separator />
+         <Label styleClass="description-label" text="Narzędzie do konwertowania liczb naturalnych z jednego systemu pozycyjnego do innego (o różnych podstawach)." textAlignment="CENTER" wrapText="true" />
+         <Separator />
+         <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="10.0">
+            <columnConstraints>
+               <ColumnConstraints halignment="RIGHT" maxWidth="-Infinity" minWidth="-Infinity" />
+               <ColumnConstraints halignment="LEFT" maxWidth="-Infinity" minWidth="-Infinity" />
+            </columnConstraints>
+            <children>
+               <Label fx:id="baseTwoLabel" styleClass="base-label" text="dwójkowy (podstawa 2)" GridPane.rowIndex="0" />
+               <Label fx:id="baseThreeLabel" styleClass="base-label" text="trójkowy (podstawa 3)" GridPane.rowIndex="1" />
+               <Label fx:id="baseFourLabel" styleClass="base-label" text="czwórkowy (podstawa 4)" GridPane.rowIndex="2" />
+               <Label fx:id="baseFiveLabel" styleClass="base-label" text="piątkowy (podstawa 5)" GridPane.rowIndex="3" />
+               <Label fx:id="baseSixLabel" styleClass="base-label" text="szóstkowy (podstawa 6)" GridPane.rowIndex="4" />
+               <Label fx:id="baseSevenLabel" styleClass="base-label" text="siódemkowy (podstawa 7)" GridPane.rowIndex="5" />
+               <Label fx:id="baseEightLabel" styleClass="base-label" text="ósemkowy (podstawa 8)" GridPane.rowIndex="6" />
+               <Label fx:id="baseNineLabel" styleClass="base-label" text="dziewiątkowy (podstawa 9)" GridPane.rowIndex="7" />
+               <Label fx:id="baseTenLabel" styleClass="base-label-ten" text="dziesiętny (podstawa 10)" GridPane.rowIndex="8" />
+               <Label fx:id="baseElevenLabel" styleClass="base-label" text="jedenstkowy (podstawa 11)" GridPane.rowIndex="9" />
+               <Label fx:id="baseTwelveLabel" styleClass="base-label" text="dwunastkowy (podstawa 12)" GridPane.rowIndex="10" />
+               <Label fx:id="baseThirteenLabel" styleClass="base-label" text="trzynastkowy (podstawa 13)" GridPane.rowIndex="11" />
+               <Label fx:id="baseFourteenLabel" styleClass="base-label" text="czternastkowy (podstawa 14)" GridPane.rowIndex="12" />
+               <Label fx:id="baseFifteenLabel" styleClass="base-label" text="piętnastkowy (podstawa 15)" GridPane.rowIndex="13" />
+               <Label fx:id="baseSixteenLabel" styleClass="base-label" text="szesnastkowy(podstawa 16)" GridPane.rowIndex="14" />
+               <TextField fx:id="baseTwoTextField" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+               <TextField fx:id="baseThreeTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               <TextField fx:id="baseFourTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               <TextField fx:id="baseFiveTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+               <TextField fx:id="baseSixTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+               <TextField fx:id="baseSevenTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               <TextField fx:id="baseEightTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+               <TextField fx:id="baseNineTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+               <TextField fx:id="baseTenTextField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+               <TextField fx:id="baseElevenTextField" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+               <TextField fx:id="baseTwelveTextField" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+               <TextField fx:id="baseThirteenTextField" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+               <TextField fx:id="baseFourteenTextField" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+               <TextField fx:id="baseFifteenTextField" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+               <TextField fx:id="baseSixteenTextField" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            </children>
+            <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints />
+            </rowConstraints>
+         </GridPane>
+      </VBox>
+   </content>
+</ScrollPane>

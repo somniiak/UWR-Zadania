@@ -1,0 +1,502 @@
+	  	  	14.4457 56//consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+	74.4777 9.1377 14 29.4607//amet consectetur adipiscing elit sed do eiusmod tempor		
+ 	  25 86 37 93//elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 	 	  
+	46.4644 98.3034 86.5248		 				
+		  	 	75 50.8055 87.1308 27.5822	  		
+ 18 20 85.4650   	
+				37.2116 82.3603 17			 		 
+87 68.5222 34.7765 40.1650 	 	
+	 	 			87 40.0254//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut	 			  
+			  	 76 93.1064 31//labore et dolore magna aliqua ut enim ad minim veniam quis
+  	 	 74 91 38.1514//ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis
+  	   20//minim veniam quis nostrud exercitation ullamco 			
+93.8804 54 60 87//consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris 
+   	//amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim	 		 
+    	9 12 21.8541//exercitation ullamco		   		
+			 79.3995 47 10.1394//aliquip ex ea commodo consequat 
+      99 27 15.2883 75	
+ 	  	 0.1957 78.8242 78.8132 14.5422			 
+	  	 	19.9685 88.9778//aliquip ex ea commodo
+ 39.2019 94.6191//ullamco laboris nisi ut aliquip ex ea commodo 	    
+					  44.8012 88 31.4736 31	
+	  18.7939 82 18.4214//ipsum dolor sit amet consectetur adipiscing elit sed do	
+  		42 70//consequat 				
+	44.9154 26 23//labore et dolore magna aliqua ut enim ad  	
+ 		   	40 23.2094//minim veniam quis nostrud exercitation ullamco laboris  
+7 7 7 
+  				 	 	
+					
+		 31.7893//do eiusmod tempor incididunt ut	 	  
+ 37.3458	 
+82 59 18 72.3057//exercitation	 	 	
+ 	  			74 43.8687 59 10//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud	 
+ 	  	  43 21.2602
+ 	37 77.9844 37.5011//elit sed do eiusmod tempor		
+  		 	 	  
+	    55.8275//dolore magna aliqua ut enim ad minim veniam quis nostrud  		 
+32 24 14.8776 33//ut labore et dolore magna aliqua ut enim ad 	
+	 			 	//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna	 			
+	  	  	93.5924//consequat 		 	
+	    	   		
+				 27.9392 24 72.6938//ullamco laboris nisi ut aliquip ex ea	    	 
+  41 76//et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi			 
+  76.4511 73.8973 4
+	86 29.7476 52.1529 12//ad minim veniam quis nostrud exercitation ullamco laboris nisi	  	 	
+ 	 		76 67.3233 20.5793 4.7259//nostrud exercitation ullamco laboris nisi ut aliquip ex ea		 	   
+76 29.0218 79 52	
+ 					74.7358 34.4722 21.4549 		
+			 78.8427 96.8450 46 97.0402 	
+ 		  
+ 		 31		 
+	  	 50 0 41.0421 				 
+			 		
+		 45.3348 77//commodo consequat	 		   
+92.3973  
+ 	  33.9790//dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip
+39 91.8550 17.9985 33 	 	 	
+     99 8 88.4343
+			 		53 11//magna aliqua ut enim ad minim  		
+   	    	  
+	 		 61.9485 2 	
+		88 50.5505//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut	  
+		 		 	63 87//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex  
+22.9568 68.1761 39 55.1360//exercitation ullamco laboris nisi		 		
+	  80 14 10 26.3732					
+	 		98.8033	 	
+  1 57.1577 80	  		
+3 4 5//xddd
+31 3.8452 97.7307
+86.4443 38 37.1582 15.6941 			
+		   //lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	 			
+  	3.4277  	 		 
+ 87 16 19.0604//lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim   			
+  14.3925 30 67.8351//laboris nisi ut aliquip	  
+	7.4243 71.6122 15//ea commodo consequat    
+			45 12 8.9660 71.6467//consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore
+	    73.9293 0.7709 97.4589//consectetur adipiscing elit
+		  49 65 64.6621		 	 	 
+ 	 	98 	 
+		   	69.1088		 	  
+ 	   	 48 70.7929 79.1346 39//nostrud exercitation  
+  	  //ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat	 
+ 	2.2749 1 69.5519//aliqua		 	
+91.3808 36 1//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam  	 		 
+	   	34.9744//et dolore magna aliqua ut enim ad	
+				//eiusmod tempor incididunt ut labore et			
+  	 		62.2538 65 98.0151//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+ 	9 60.7915 81//adipiscing elit sed do eiusmod tempor incididunt ut labore
+ 20 6.5327 75//ex ea commodo
+  	 //tempor incididunt ut labore et dolore magna	
+91.0610 51 71.9792
+ 	 	   9.5166 34 7.8286 11
+		 	//sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim	  
+ 		 41.1239 29//ut labore et			   
+				//amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip 
+	    	 41.6784 76.1615 85	 	
+		   99.3885 32 89   	  
+ 			 	 		
+ 41//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam 	
+ 	   	1.7519 65//ut aliquip ex ea commodo consequat 		  		
+83.6758//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim	 
+     		//dolore magna aliqua ut enim	 
+					0 54//ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea	 
+		 		//enim ad minim 		
+   			 
+	   		77 48//consequat	  	
+  	 
+41//nostrud exercitation   	 
+			83 98.0363 30.3758 34.9969//laboris
+				 	60 99.7002//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip		  		 
+ 
+	  52//amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim    	
+	 	 68 67 84 
+    38.6624 87.4998 93.5436 81//exercitation ullamco laboris nisi ut aliquip				
+//et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 	 
+37//dolore magna   				
+   	96//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis 	
+ 	 	
+	  67.4712
+72 27.7047 0.1766 87.1925//dolore  			
+ 	 	 37.3735 
+  	58 92.7104 73 32//elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip  		  
+ 			 71.5738 0.1913 46    			
+	 			 			 	
+   85.3864 79 77.8315
+		73 39.1492 45.4077	  	
+		  51.3797 51.8891 57 82.2869//quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea	 	
+ 	  32 76//et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 		 	 	
+	 	//magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris    
+   		7.7122
+		38.7777 91.9354 2.8977 82 			
+  					
+96 22 60.5609//ad minim   	 
+	99.7498 25.4331 24 	
+	 49 46.6002 70.8028 52.4798
+ 		  	54.5856 58 78.0186//quis nostrud exercitation ullamco laboris 			
+  	 	//nisi ut aliquip ex ea commodo  
+	  			 
+	
+//aliqua ut		
+		    84 58.9683 75 14//enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut   
+  98.7983 53.6792 89 73.3257
+	 	   	39.1880 82.5759 10.0509//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut	 	
+  23.5014 94 34.7882//veniam    	 
+  39 15.7150//et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation		  	 
+  			 59 9 68.2247 	  			
+ 		  58.1308 4 86.2720	 	
+  86.4361 93 97 28	
+ 99 5.3727 82 94    
+51.8458 33.8200 51 7.8788	 	  	
+			36.4096 	  
+		 	  8 7.8178 62.8012//commodo consequat    
+		 37.1159 9.8042 63.3775 41//consequat 			 
+ 	25.2944 24.3142    	
+ 0.0561 56.0031 47 64   
+				98 82 35 7.9236 
+		    41//aliqua ut enim ad minim
+ 42 21.0193 25.2674	 	 			
+ 		 40 65.3974 32 45.7389//dolore magna aliqua ut				 
+ 39.5515 68 24.2637//magna aliqua ut enim ad minim veniam	 
+		 //consequat 	 	 	
+ 	   	2//aliquip ex ea			
+	  1 87//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi		 	  
+ 	 	21.3803 86					 	
+			//labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+   			
+ 	  	 
+		 	
+	1//ad minim veniam quis nostrud exercitation ullamco 
+	   	 15//minim veniam quis nostrud exercitation ullamco
+	     	9.2005 9	 		  
+24 60.1983//quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea		 
+	 	53 19 0.6002			 	 
+  68.6523 94.1051 37.6674 74.8863//sit amet consectetur adipiscing elit sed do eiusmod tempor	
+		  	
+17.1977 52.5901 97.0030	 				
+	  	   10 0//ut labore et  	 	
+	 	  	    
+ //laboris nisi ut
+  		 78.9778
+		 94 7 23.9631	
+ 		3.5076//aliqua ut
+53 6.8806 56.7473//aliquip ex ea 		  	 
+20.4804 51 85.4944 50.1688  	  
+     //ut aliquip	
+		
+		 			 11 87.0983 11.3417//ex ea commodo consequat		 
+76 99 84 2.0304		
+ 	 	   36.1658//ad minim  		
+				 56.7573 6 		
+	 	 
+	43	
+ 	 		
+			   49.8500 29.0161//ad minim	 	
+	 	   
+ 		 	 	  
+	   	80.7160 40//consequat	 		
+	    17.3376 83.9556 37//nostrud exercitation	  	
+ 	 40.4342 6 82.1893 38//incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation 	  	
+		 	86.1021 35 54 56.5866//ut labore et dolore magna aliqua ut enim			  
+	 	//aliquip ex ea commodo consequat					  
+ 	  	//nisi ut aliquip ex  	
+ 64    		
+  			 	  				
+		18.5326 2.2066//ut aliquip  		 	
+		  			//sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad  		 	
+11.7828		
+ 		 69.8297 		 
+	 	   //sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis	 		
+    	 	 	 		
+		 	 	 4.4919 69 70//labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation		 	 
+	 	 	 33.7194 4.3777 45.6294 36.8683//ut enim ad minim veniam quis 		 	 
+ 49.5605 43 14 79				
+21 50.0024 28.6364//laboris nisi ut aliquip ex			
+	 	70.7517 31//nostrud 
+  	 	  10.8153//lorem ipsum dolor sit amet	 	 		 
+42 45 78 17//do eiusmod tempor incididunt ut labore et dolore magna			 
+	 41 
+	 91 93.5971 68.1714 	 	 	
+				  	7.5981 5//ullamco laboris nisi ut aliquip ex	
+		11 15	  		 	
+	85.3366//elit sed do eiusmod	   
+74 64.2895  	   
+ 27 35.3646		
+ 	 	 60 84.3856		
+	 3.7892 79.6773 57.9736	
+		 	  81 52.1324 56.6002	
+	77.2516 73.3113 5.5439 64.2494//elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip   		
+ 	49.6439 46.9915 34.4461 94//magna aliqua ut enim ad minim veniam quis nostrud	
+ 25			
+				  14 42.8886 66.6888 40//ex ea commodo			 
+		  27.0397 18 66//ipsum dolor sit amet 			 		
+   		  69 20.7135 28
+		 	9.8023 72.3574 69.5867//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation		 		 
+		 	  90.8703 15.8602//ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut
+    		33.1279//aliquip ex ea commodo	
+	   22 68.5378 81	  
+	   		 12.4429 
+   	83.6332 34.8294 78//incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco
+		  	41.1322 94.9049//ea commodo consequat
+ 	 28.7446 6.4737 81.5433 14//aliquip		  
+  	67.8245 92 14.1586		   	 
+	49//ea commodo    	
+	  	32.0409 93//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim	 			
+		 			91 13 64//do eiusmod tempor		  
+77 46 50.5533//nostrud exercitation ullamco	
+			  99.3259 51.9390 38.6699 80.2834	
+  	 52//ullamco laboris nisi ut aliquip ex ea 
+	 84.8954 59 43.4722//lorem	 	  	
+ 18.2268 42.3213 55//ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut   	
+ 36 99.6694 92.4241//aliquip ex ea commodo 	 	 	
+ 	 83 37.0676 85.9507  	 
+ 			  	70 17.2063//ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi		 	
+	  	0 22 
+	   			55.9901 70.4003 14//ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris		
+		 		 	0.0358 46.0706 45.6918//aliqua ut enim ad minim veniam quis nostrud exercitation  	 
+73.7939 41 19.2720   	  
+  
+	  53.1265 38.4809 79.3252 90//labore et dolore magna aliqua ut enim			 	  
+  17.5254 	
+ 	 //quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+95.9932
+ 				 85 79 34 	   	
+ 39.6438 58//enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 			  	
+48 82.3827 31 90.0946 
+	    5.1324 				 	
+  			30.5459 45 15//ullamco laboris   	 	
+  61.3962//elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  
+					43//exercitation ullamco laboris nisi ut aliquip ex ea   
+			0.1733
+  37 61.6683 57//ut aliquip ex ea commodo		 		
+		  	//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation			
+  	  	23 13 99 					 
+   	90//commodo consequat 		
+		 	8 77 99//ut aliquip ex ea	   
+		  	26 88.6326 16 
+		 	 	 
+ 45.3983 84.0730
+     45.5066 55.8937//ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut	 
+ 79.5603 80 20 43.9281//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+ 77//do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi  
+51 41 69.4475//ut aliquip 	 
+ 	  	   	
+  	 	90 75.5011 82 9.8381//nostrud exercitation ullamco laboris nisi				  	
+		 	56.7174 29//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam	 
+		 9.7706//aliquip ex ea	 	
+	  		 		 	 
+			  99.2883 11 47 		
+ 	   		88.4314 28.8431//ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip	 		 
+ 			  	 	
+		//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi	
+ 	83 37 7.7510	  		
+	 		 	 50 69.2438	   	
+			  0.6908	 		
+ 69.7050 95.2476//ipsum dolor sit amet consectetur adipiscing elit	 
+   	//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut 			 	 
+//dolor sit			
+	 			 		 
+ //adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris		    
+	50 78.0927 27 49	 
+		 		19 79 22 27.1655//labore et dolore magna aliqua ut enim ad		  	
+  67	  	  	
+59 31
+  			85.4276 24 96.3893 70.1583//ut 
+	70//lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation		
+ 		91//consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et	 	
+					 	98.7121 4 83.9262 26.3289	
+	75.4025//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi			
+  			94.2348 
+			7 54 54//dolore magna aliqua ut enim ad minim veniam quis	 	
+ 		  	
+82 95.0860 16.8997//ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip 		 
+	91.3625//sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut  
+  30.8368 16.6115 82.2393//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi 		  	 
+ 		 		 //nisi ut aliquip ex ea commodo consequat 		
+ 		  32 18.1693 23
+   			53.3332 1.8783 35.3369			    
+	41.7305//tempor incididunt ut labore et dolore					
+ 9 28.5297//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud	    	
+95//nisi ut aliquip ex ea	 		 
+ 	     23 79 9.8141	 			 	
+			74 12.6769 74.0463//do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex	
+ 	57 15.7493 70.7618 39.7222//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco	 	  	 
+  //amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris		 			 
+     67.6087 71 94.5590//minim			
+ 	   	
+  	 53 50.6499 35 94.2600//ut	
+		    	99 38  		
+		47 17.6563	
+  	 	 	
+  		51 41 38     
+		 	77 53 35 2.0077//dolore magna aliqua ut enim ad minim veniam	
+ 	  			1.5836 10.7695 36		  	 
+	 	      	
+ 		62.9427	 			
+	 	6.6310 3 90	 	 
+	 	//sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut 		 		 
+	61 90.0798 69 		 		
+   	  //ullamco laboris nisi ut aliquip ex ea commodo consequat	
+	 	 	 	68.9801 71.2970 43 			 
+  14.5559 42.2703//aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip 	 
+ 	 				50 3.7487 73//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 		    
+  //ut	
+				  59 16.5982 98.5084//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	
+ 					19//do eiusmod tempor incididunt ut  
+	 		 	74 16.2837 3			
+13.9013 15//labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco		  	 	
+	  		89 50.2348  		
+	  	 	47 43 7.5055 86.6204//lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco 		 	 
+		 81 84 49.9913	    		
+ 				8 56.5109 89.5441 3.2410		 			 
+		 		 	87 68.9089 33.2033 
+	50 85 1 93//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat 	 	  
+18.7110 85.6630//amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore	  	 
+ 97.7329 99.0658//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo		
+  58.2855 24 50 2	  		  
+ 	 85.9694 83.5434 73.6900 	
+			 	26	   	 	
+	  				21.1685 99.2639 17		
+16.5579 19.2369 83.8062 80//laboris nisi ut aliquip ex ea commodo consequat 	   
+  	  	 33 52.0608 26.3539//commodo consequat	
+   	 	 96 89.2767 13.8183//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco				 
+				83.3762 55.3584//adipiscing elit sed do eiusmod tempor incididunt ut labore et 
+    	 
+63 33.2516//exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+ 	 47 0 66//minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex		   	
+ 	  		25 22.3015 2.6387 			 	
+		37 60 40 63//commodo consequat  	   
+		 	 	62.9478 81.9253 49.8421 40.5153//labore et dolore magna aliqua ut enim ad
+21//ex ea		
+		 58.0841//consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco 	  	 
+  96.1984 7.4633
+	1.0523 70//dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation		 
+ 		 78.6584 80.3719 7//magna aliqua ut enim ad minim veniam  			 	
+		48 70.8437		
+ 		    	 
+ 	  32 39 4.5507 67//incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+	 	   	79   	 
+	      29//do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis	 	 	 
+	  13 51.4499 31.1093 56.4259				 	
+		 48 21.3574 0	 	 	
+ 	     1//lorem ipsum dolor sit amet
+		 37 80.4963 75//minim
+		//ex ea 
+	     	25 60 56 80.5383//commodo consequat	 	
+	83.9672 18.8711 83.5793 57.2181   
+		    	11.2813 76.2412//dolor sit amet consectetur adipiscing
+		 	 	86.3031 27.2172 72 11.3429//dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco 
+	  90.7465 56.0401 64.7985 26.8639   
+						67.1783 36.2099//lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor    	 
+  		85.7835 8.1681//exercitation ullamco laboris  		   
+	   	  9.4409 33 0.1950 73//sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim
+ 95.5999 31.6443 1.9122 33.2433  			
+  	   	19 83 0.0616 27//laboris nisi	
+  41//do eiusmod tempor	     	
+ 		  89.8082 33.1608 90//quis nostrud exercitation   	   
+79.9362 15.4403 50.3108 35.6139//eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis   	
+	 	   83.8288 80 90//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea     
+ 	 //ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco  			 
+ 		 			 	 	
+ 	 				60	 
+		 		
+  81   			 
+	    	10.8826 21.7417 68//ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris 		  
+	75.7815
+	 	 26 81	 
+		  			77.4325 50 74.7116			  
+24.2499 56 	
+  		28 51 80.3640 85.4740//aliquip ex  			 
+	 	57 1//ullamco laboris nisi ut aliquip ex  
+ 	 	 33 87.0007 42	  			
+ 		 			
+  				4.3841//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo		 		
+			 	3.0806 54.5266 41.4664	 
+  	   	//lorem ipsum dolor sit
+61.9135  	 	 
+ 28 56.1194	    	
+   		 22.6266 2.7712 51.4233//labore et dolore magna aliqua ut enim ad minim veniam quis	 	   
+ 			 	22//ad minim veniam quis nostrud		   
+  31.5478 45.5757 8.1184 28	 		   
+  	   16 77.6595 61.2782//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex			
+		 	95.5229//lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor	 
+	 	51 72	  		
+  	 	//ut enim ad minim veniam quis nostrud
+64.9147 11 45.7695//elit sed do eiusmod tempor incididunt ut			 			
+ 		  66  		
+	 					
+	  	 //labore et dolore magna aliqua ut enim ad minim   		  
+	     82.4250 98 78.3247		 
+ 		5.1509	 
+	  6 66.2567 52//commodo consequat  	 	
+ 	  91.0363		  
+  70.7710 20.8422//nostrud exercitation ullamco laboris nisi
+	13.5485 31 					
+	 			64 74 14.8236//adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex 	 	   
+ 		 19.2018//exercitation ullamco laboris nisi  
+	 39.7834 68//tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris	  		
+				 58 51 23.0343 18.0473//ad 	
+					24 22 46 85//sit amet	 		  
+     92 60 83.4953 52//enim ad minim veniam quis nostrud exercitation ullamco
+	 	  
+			  1.8218 83.9160//ad minim veniam quis nostrud exercitation ullamco laboris nisi			    
+    	 //incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut		   
+ 		  	97.9216 91.8506 56.7534//ad minim veniam quis	 			
+   	44.0096 14.8195 42.8673 	 	
+16//laboris nisi ut aliquip ex ea commodo consequat 
+	  	87
+		  	24.4318 27.5266 	 				
+70.1156//magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+	 		41.4973 63 58.6737 31    
+ 	 	 		86.2262 17.5286 25.8268
+ 	49.7500 55		 
+	  	 		
+32 90.4524 37.8690//ex ea commodo  	
+  99 61.6525
+	 	74//nostrud exercitation ullamco laboris 	 
+	 	 
+ 	  //dolore magna aliqua ut enim ad 	 
+	 58		 
+		 	 		55.3690	      
+ 	 	30 43//ea commodo consequat   			 
+		94.2231 26
+  	 52 98 74	    		
+ 70 45.1473 39.4667 44.0102
+		 39 47.5643	 	  
+ //consectetur	  	  
+  	 			24 0 11//aliqua ut enim ad			 	 
+ 36.2796 64.0247 54.7588    
+	    	  	 	
+	  //dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad
+	  	 		90.5675
+   	69.0947 51.6707  	
+	  	 	
+ 		 		54.5655//sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation   		
+ 	 	 53//ex ea commodo
+81 36.9577 24.1849 	
+		//labore et dolore magna aliqua ut enim		  
+	 
+		  	6 29		 	
+		 		 //ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat     
+   80.5826 3.1788 38 84//quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo		
+		  	67.8383//do eiusmod
+ 	29.7326//dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis  		   
+ 			 	 42 13.7718 52.2834     
+ 		 //tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris  	 		
+	   	69 58 19.6564//do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad 					
+	    59.5850 29//nisi	 
+   67//commodo	   		
+	  		
+ 	 	 81.0925 60 5.5875//ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et  			
+	 		 		61.4468 43.3752 64.9005
+ 		  95 48.0187 77.2592//dolor sit amet consectetur adipiscing elit
+		  		31 7 80//ea commodo consequat 
+	15 21.3280//ut aliquip ex ea  		
+		  72.9412 38 75.7248//exercitation ullamco laboris nisi ut aliquip ex  
+  	   92.5800 		  	
+86//magna aliqua ut enim ad minim veniam
+	 	   	93.7992 34 94//magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi 	  
+	  	 	 60		 
+		  //elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua	 	  
+ 		  		//consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore	  
+	63.7445 87.5182 38	 	 	
+    	 	//do eiusmod tempor incididunt ut labore 		  	 
