@@ -1,0 +1,10 @@
+[project]
+name = "zadanie01"
+version = "0.2.0"
+requires-python = ">=3.14"
+dependencies = [
+    "flask>=3.1.2",
+    "flask-restful>=0.3.10",
+    "peewee>=3.18.3",
+    "requests>=2.32.5",
+]

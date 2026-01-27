@@ -1,0 +1,38 @@
+{
+  "books": [
+    {
+      "author": "Bruno Schulz",
+      "title": "Sklepy cynamonowe",
+      "year": 1933
+    },
+    {
+      "author": "Vladimir Nabokov",
+      "title": "Lolita",
+      "year": 1955
+    },
+    {
+      "author": "Franz Kafka",
+      "title": "Proces",
+      "year": 1925
+    },
+    {
+      "author": "Władysław Reymont",
+      "title": "Chłopi",
+      "year": 1909
+    }
+  ],
+  "people": [
+    {
+      "name": "Laurel Ipsium",
+      "email": "laurel@ipsium.edu"
+    },
+    {
+      "name": "Marek Bazarek",
+      "email": "bazarek@marek.pl"
+    },
+    {
+      "name": "Tomek Lis",
+      "email": "tomeklis@wp.pl"
+    }
+  ]
+}
