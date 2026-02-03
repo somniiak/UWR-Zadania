@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Deklaracja</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <center>
+
+            <table id="deklaracja">
+                <tr>
+                    <td><b>Przedmiot</b></td>
+                    <td colspan="2"><%= data.course %></td>
+                    <td><b>Imię i nazwisko</b></td>
+                    <td colspan="2"><%= data.name %></td>
+                    <td><b>Lista</b></td>
+                    <td><%= data.list %></td>
+                    <td><b>Data</b></td>
+                    <td colspan="2"><%= data.date %></td>
+                </tr>
+                <tr>
+                    <td><b>Zadanie:</b></td>
+                    <% for(let i=1; i<=10; i++){ %>
+                        <td class="numberCell"><%= i %></td>
+                    <% } %>
+                </tr>
+                <tr>
+                    <td><b>Punkty:</b></td>
+                    <% for (let i = 1; i <= 10; i++) { %>
+                        <td class="numberCell"><%= data[`exercise-${i}`] %></td>
+                    <% } %>
+                </tr>
+            </table>
+            <br>
+            <button onclick="window.print()">Drukuj</button>
+
+        </center>
+    </body>
+
+</html>

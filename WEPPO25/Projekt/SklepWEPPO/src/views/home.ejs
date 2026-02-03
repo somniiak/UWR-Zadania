@@ -1,0 +1,45 @@
+<h2>Polecane produkty</h2>
+<section class="products">
+  <% randomProducts.forEach(p => { %>
+    <a href="/product/<%= p.id %>">
+      <article class="product">
+        <header>
+          <img src="/assets/images/products/<%= p.id %>/main.jpg"
+            onerror="this.onerror=null; this.src='/assets/images/misc/placeholder.jpg';"
+            alt="<%= p.name %>">
+        </header>
+        <div class="product-text">
+          <h5><%= p.name %></h5>
+          <p><%= p.description %></p>
+        </div>
+        <footer>
+          <b><%= p.price %> zł</b>
+        </footer>
+      </article>
+    </a>
+  <% }) %>
+</section>
+
+<hr>
+
+<h2>Najtańsze produkty</h2>
+<section class="products">
+  <% cheapestProducts.forEach(p => { %>
+    <a href="/product/<%= p.id %>">
+      <article class="product">
+        <header>
+          <img src="/assets/images/products/<%= p.id %>/main.jpg"
+            onerror="this.onerror=null; this.src='/assets/images/misc/placeholder.jpg';"
+            alt="<%= p.name %>">
+        </header>
+        <div class="product-text">
+          <h5><%= p.name %></h5>
+          <p><%= p.description %></p>
+        </div>
+        <footer>
+          <b><%= p.price %> zł</b>
+        </footer>
+      </article>
+    </a>
+  <% }) %>
+</section>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Upload</title>
+    </head>
+
+    <body>
+        <center>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="icon" />
+                <button type="submit">Wyślij</button>
+            </form>
+            
+            <% if (filename) { %>
+                <img src="/images/<%= filename %>" width="200">
+            <% } %>
+        </center>
+    </body>
+
+</html>

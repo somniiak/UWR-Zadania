@@ -1,0 +1,81 @@
+<div class="product-page grid"
+      style="grid-template-columns: 2fr 2em 1fr">
+  <div class="product-left">
+    <center>
+      <div class="slideshow-container">
+        <!-- Galeria obrazków inspirowana bardzo: -->
+        <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+        <!-- Nie ma obrazków -->
+        <% if (images.length === 0) { %>
+          <div class="productSlides fade">
+            <img src="/assets/images/misc/placeholder.jpg">
+          </div>
+        <% } %>
+
+        <!-- Obrazki produktu-->
+        <% images.forEach(img => { %>
+          <div class="productSlides fade">
+            <img
+              src="/assets/images/products/<%= product.id %>/<%= img %>"
+              onclick="setImage(this)"
+            >
+          </div>
+        <% }) %>
+
+        <!-- Strzałki kontrolki -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </center>
+    <br>
+
+    <b>Opis produktu</b>
+    <p><%= product.description %></p>
+  </div>
+
+  <!-- Jakiś odstęp między kolumnami -->
+  <div></div>
+
+  <div class="product-right">
+    <h2><%= product.name %></h2>
+    <h3 class="price"><%= product.price %> zł</h3>
+    <form method="POST" action="/cart/add">
+      <label>
+        Ilość
+        <input
+          type="number"
+          name="count"
+          value="1"
+          min="1"
+          step="1"
+          required
+        >
+      </label>
+      <input type="hidden" name="productId" value="<%= product.id %>">
+      <button type="submit">Dodaj do koszyka</button>
+    </form>
+  </div>
+
+  <script>
+    let slides =
+      document.getElementsByClassName("productSlides");
+
+    let slideIndex = 0;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      slideIndex = (slideIndex + n + slides.length) % slides.length;
+      showSlides(slideIndex);
+    }
+
+    function showSlides(n) {
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+
+      slides[slideIndex].style.display = "block";
+    }
+  </script>
+</div>
+

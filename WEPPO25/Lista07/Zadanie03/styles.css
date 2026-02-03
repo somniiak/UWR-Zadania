@@ -1,0 +1,17 @@
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    table-layout: fixed;
+    font-size: 14px;
+    width: 106em;
+}
+
+td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,72 @@
+<h1>Koszyk (<%= items.length %>)</h1>
+
+<% if (items.length === 0) { %>
+  <p>Koszyk jest pusty.</p>
+<% } else { %>
+  <div class="grid" style="grid-template-columns: 2fr 2em 1fr">
+    <div class="cart-left">
+      <table>
+        <tbody>
+          <% items.forEach(i => { %>
+            <tr><th><a href="/product/<%= i.product.id %>">
+              <article class="cart-product">
+
+                <img src="/assets/images/products/<%= i.product.id %>/main.jpg"
+                  onerror="this.onerror=null; this.src='/assets/images/misc/placeholder.jpg';"
+                  alt="<%= i.name %>">
+
+                <div class="cart-product-info">
+                  <h5><%= i.product.name %></h5>
+                  <p>Ilość: <b><%= i.quantity %></b></p>
+                  <p>Cena: <b><%= i.product.price %> zł</b></p>
+                </div>
+
+                <form method="POST" action="/cart/delete">
+                  <input type="hidden" name="productId" value="<%= i.product.id %>">
+                  <button class="secondary">Usuń</button>
+                </form>
+
+              </article>
+            </a></th></tr>
+          <% }); %>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Jakiś odstęp między kolumnami -->
+    <div></div>
+
+    <div class="cart-right">
+      <h3>Razem: <%= total %> zł</h3>
+
+      <!-- Placeholder na dane -->
+      <form method="POST" action="/order/create">
+        <small>
+          Imię i nazwisko adresata
+          <input
+            type="text"
+            name="name"
+            placeholder="Imię i nazwisko"
+            required
+          />
+        </small>
+
+        <small>
+          Adres dostawy (mieszkanie, miejscowość, kod pocztowy)
+          <input
+            type="text"
+            name="address"
+            placeholder="Adres dostawy"
+            required
+          />
+        </small>
+
+        <small>
+          Płatność dokonywana przy odbiorze przesyłki kurierskiej.
+        </small>
+
+        <button type="submit">Złóż zamówienie</button>
+      </form>
+    </div>
+  </div>
+<% } %>

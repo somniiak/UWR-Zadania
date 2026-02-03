@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><%= shopName %></title>
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <!-- Pico CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+
+<nav class="container-fluid top-navbar">
+  <ul>
+    <li><a href="#" data-theme-switcher="toggle" title="Toggle Theme"
+            style="color: var(--pico-contrast); font-size: 1.5em;">☀</a></li>
+    <li><a href="/"><b><%= shopName %></b></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <form action="/search" method="GET">
+        <input
+          type="search"
+          name="q"
+          placeholder="Czego szukasz?"
+          value="<%= typeof q !== 'undefined' ? q : '' %>"
+          style="font-size: 18px;"
+        />
+      </form>
+    </li>
+  </ul>
+
+  <ul>
+    <% if (!user) { %>
+      <li><details class="dropdown">
+        <summary role="button" class="outline">
+          Moje konto
+        </summary>
+        <ul>
+          <li><a href="/cart">Koszyk</a></li>
+          <li><a href="/login">Zaloguj się</a></li>
+          <li><a href="/signup">Zarejestruj się</a></li>
+        </ul>
+      </details></li>
+    <% } else { %>
+        <li><details class="dropdown">
+        <summary role="button" class="outline">
+          Moje konto
+        </summary>
+        <ul>
+          <li><b><%= user.email %></b></li>
+          <% if (user.role == "admin") { %>
+            <li><b style="color: red;">Administrator</b></li>
+            <li><a href="/admin/users">Lista użytkowników</a></li>
+            <li><a href="/admin/orders">Lista zamówień</a></li>
+            <li><a href="/admin/products">Lista produktów</a></li>
+            <li><a href="/admin/add_product">Dodaj produkt</a></li>
+          <% } else { %>
+            <li><a href="/cart">Koszyk</a></li>
+          <% } %>
+          <li><a href="/logout">Wyloguj</a></li>
+        </ul>
+      </details></li>
+    <% } %>
+  </ul>
+</nav>
+
+<main class="container">
+  <%- body %>
+</main>
+<script>
+// https://benhoskins.dev/pico-css-theme-toggle/
+const themeSwitcher = {
+  // Config
+  _scheme: "auto",
+  buttonsTarget: "a[data-theme-switcher]",
+  buttonAttribute: "data-theme-switcher",
+  rootAttribute: "data-theme",
+  localStorageKey: "picoPreferredColorScheme",
+
+  // Init
+  init() {
+    this.scheme = this.schemeFromLocalStorage;
+    this.initSwitchers();
+  },
+
+  // Get color scheme from local storage
+  get schemeFromLocalStorage() {
+    return window.localStorage?.getItem(this.localStorageKey) ?? this._scheme;
+  },
+
+  // Preferred color scheme
+  get preferredColorScheme() {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  },
+
+  // Init switchers
+  initSwitchers() {
+    const buttons = document.querySelectorAll(this.buttonsTarget);
+    buttons.forEach((button) => {
+      button.addEventListener(
+        "click",
+        (event) => {
+          event.preventDefault();
+          // Set scheme
+          this.scheme = button.getAttribute(this.buttonAttribute);
+        },
+        false
+      );
+    });
+  },
+
+  // Set scheme
+  set scheme(scheme) {
+    if (scheme == "auto") {
+      this._scheme = this.preferredColorScheme;
+    } 
+    else if (scheme == "toggle") {
+      this._scheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    }
+    else if (scheme == "dark" || scheme == "light") {
+      this._scheme = scheme;
+    }
+    this.applyScheme();
+    this.schemeToLocalStorage();
+  },
+
+  // Get scheme
+  get scheme() {
+    return this._scheme;
+  },
+
+  // Apply scheme
+  applyScheme() {
+    document.querySelector("html")?.setAttribute(this.rootAttribute, this.scheme);
+  },
+
+  // Store scheme to local storage
+  schemeToLocalStorage() {
+    window.localStorage?.setItem(this.localStorageKey, this.scheme);
+  },
+};
+
+// Init
+themeSwitcher.init();
+</script>
+</body>
+</html>

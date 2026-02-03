@@ -1,0 +1,38 @@
+<main class="auth-box">
+  <h1>Rejestracja</h1>
+  <sup>
+    Posiadasz już konto? <a href="/login">Zaloguj się.</a>
+  </sup>
+  <form method="POST" action="/signup">
+    <input
+      type="email"
+      name="email"
+      placeholder="Email"
+      aria-label="Email"
+      autoComplete="email"
+      required
+    />
+    <input
+      type="password"
+      name="password"
+      placeholder="Hasło"
+      aria-label="Hasło"
+      autoComplete="new-password"
+      required
+    />
+    <input
+      type="password"
+      name="password2"
+      placeholder="Powtórz hasło"
+      autocomplete="new-password"
+      required
+    />
+    <button type="submit">
+        Zarejestruj się
+    </button>
+  </form>
+
+  <% if (error) { %>
+    <p style="color: red;"><%= error %></p>
+  <% } %>
+</main>

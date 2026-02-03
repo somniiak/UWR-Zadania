@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Upload</title>
+    </head>
+
+    <body>
+        <center>
+            <form method="POST" action="/setcookie">
+                <button>Zapisz</button>
+            </form>
+            <form method="POST" action="/delcookie">
+                <button>Zjedz</button>
+            </form>
+            <% if (cookieValue) { %>
+                <p>Wartość z ciastka: <%= cookieValue %></p>
+            <% } else { %>
+                <p>Brak ciasteczka</p>
+            <% } %>
+        </center>
+    </body>
+
+</html>

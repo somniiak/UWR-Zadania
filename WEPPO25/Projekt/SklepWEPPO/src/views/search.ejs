@@ -1,0 +1,28 @@
+<h1>Wyniki wyszukiwania (<%= products.length %>)</h1>
+
+<% if (q) { %>
+  <p>Fraza: <b><%= q %></b></p>
+<% } %>
+
+<% if (products.length === 0) { %>
+  <p>Brak wyników.</p>
+<% } else { %>
+  <div class="products-grid products">
+    <% products.forEach(p => { %>
+      <a href="/product/<%= p.id %>">
+        <article class="product">
+          <header>
+            <img src="/assets/images/products/<%= p.id %>/main.jpg">
+          </header>
+          <div class="product-text">
+            <h5><%= p.name %></h5>
+            <p><%= p.description %></p>
+          </div>
+          <footer>
+            <b><%= p.price %> zł</b>
+          </footer>
+        </article>
+      </a>
+    <% }) %>
+  </div>
+<% } %>

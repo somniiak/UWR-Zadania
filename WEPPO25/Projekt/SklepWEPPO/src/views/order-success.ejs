@@ -1,0 +1,38 @@
+<% if (user.role !== "admin") { %>
+    <h1>Zamówienie pomyślnie złożone</h1>
+<% } %>
+<p>Numer zamówienia: <b>#<%= order.id %></b></p>
+<p>Status: <b><%= order.status %></b></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Produkt</th>
+      <th>Ilość</th>
+      <th>Cena</th>
+      <th>Suma</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% items.forEach(i => { %>
+      <tr>
+        <td>
+          <a href="/product/<%= i.productId %>">
+            <%= i.name %>
+          </a>
+        </td>
+        <td><%= i.quantity %></td>
+        <td><%= i.price %> zł</td>
+        <td><%= i.price * i.quantity %> zł</td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+<h3>Razem: <%= total %> zł</h3>
+
+<% if (user.role !== "admin") { %>
+    <a href="/">Wróć do sklepu</a>
+<% } else { %>
+    <a href="/admin/orders">Wróć do listy zamówień</a>
+<% } %>

@@ -1,0 +1,22 @@
+{
+  "name": "zadanie03",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/express": "^5.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11"
+  },
+  "scripts": {
+    "start":"nodemon --exec bun app.ts",
+    "devStart": "nodemon --exec bun app.ts"
+}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Deklaracja</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <center>
+            <form action="/submit" method="post">
+
+                <table id="deklaracja">
+                    <tr>
+                        <td><b>Przedmiot</b></td>
+                        <td colspan="2"><input id="course" name="course" type="text" required /></td>
+                        <td><b>Imię i nazwisko</b></td>
+                        <td colspan="2"><input id="name" name="name" type="text" required /></td>
+                        <td><b>Lista</b></td>
+                        <td><input id="list" name="list" type="number" min="1" value="1" /></td>
+                        <td><b>Data</b></td>
+                        <td colspan="2"><input id="date" name="date" type="date" required /></td>
+                    </tr>
+
+                    <tr id="exercises">
+                        <td><b>Zadanie:</b></td>
+                    </tr>
+
+                    <tr id="points">
+                        <td><b>Punkty:</b></td>
+                    </tr>
+                </table>
+                <br>
+                <button type="submit">Wyślij</button>
+
+            </form>
+        </center>
+
+
+        <script>
+            const exerciseRow = document.getElementById("exercises");
+
+            for (let i = 1; i <= 10; i++) {
+                const cell = document.createElement("td");
+                cell.textContent = i;
+                cell.classList.add("numberCell");
+                exerciseRow.appendChild(cell);
+            }
+
+            const pointsRow = document.getElementById("points");
+            
+            for (let i = 1; i <= 10; i++) {
+                const cell = document.createElement("td");
+                const input = document.createElement("input");
+                input.type = "number";
+                input.min = 0;
+                input.value = 0;
+                input.id = `exercise-${i}`;
+                input.name = `exercise-${i}`;
+                cell.appendChild(input);
+                cell.classList.add("numberCell");
+                pointsRow.appendChild(cell);
+            }
+        </script>
+    </body>
+
+</html>
