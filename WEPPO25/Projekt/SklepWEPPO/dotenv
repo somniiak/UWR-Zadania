@@ -1,0 +1,21 @@
+SHOP_NAME=Sklepik Cynamonowy
+PORT=3000
+COOKIE_SECRET=CiasteczkaZMlekiem555
+# 7 dni
+COOKIE_MAX_AGE=604800000
+DATABASE_URL=postgresql://postgres:postgres123@localhost:5432/sklepweppo
+
+# Dodawanie admina
+# > const { hashPassword } = await import("./src/util/password.js")
+# > await hashPassword('admin123');
+# doas su - postgres
+# psql -d sklepweppo
+# INSERT INTO users (email, password_hash, role)
+# VALUES (
+#   'admin@sklep.pl',
+#   '$2b$10$pOy0Z9SS4hMBaKpUw5V/j.1UjKKgGmsvSHN0jWX7hMa/zJPiYRsbW',
+#   'admin'
+# );
+
+# admin@sklep.pl admin123
+# 123@wp.pl 123
