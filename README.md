@@ -20,3 +20,11 @@ Senestr zimowy 2025/2026:
 - Wybrane elementy praktyki projektowania oprogramowania
 - Ochrona własności intelektualnej
 - WF (Circuit training)
+
+Semestr letni 2025/2026:
+- Algorytmy i struktury danych (L)
+- Rachunek prawdopodobieństwa i statystyka
+- Systemy komputerowe
+- Scala in Practice
+- O ekonomii i gospodarce inaczej (w)
+- WF (Zdrowy kręgosłup)
