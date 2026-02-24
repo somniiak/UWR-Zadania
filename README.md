@@ -27,4 +27,3 @@ Semestr letni 2025/2026:
 - Systemy komputerowe
 - Scala in Practice
 - O ekonomii i gospodarce inaczej (w)
-- WF (Zdrowy kręgosłup)
