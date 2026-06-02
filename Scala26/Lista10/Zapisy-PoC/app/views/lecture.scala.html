@@ -1,0 +1,18 @@
+@(lecture: models.Lecture, students: List[models.Student])
+@main(s"Lecture - ${lecture.name}") {
+
+<h1>Lecture Details</h1>
+<p><b>@lecture.id</b> - @lecture.name</p>
+
+<h3>Enrolled students</h3>
+@if(students.isEmpty) {
+    <p>No students enrolled.</p>
+} else {
+    <ol>
+        @for(s <- students) {
+            <li><a href="/student/@s.index">@s.name</a></li>
+        }
+    </ol>
+}
+
+}

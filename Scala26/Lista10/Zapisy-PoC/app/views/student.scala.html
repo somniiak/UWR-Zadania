@@ -1,0 +1,28 @@
+@(student: models.Student, lectures: List[models.Lecture])
+@main(s"Student - ${student.name}") {
+
+<h1>Student Details</h1>
+
+<h3>@student.name</h3>
+<div style="display: flex;">
+    <figure data-variant="avatar" style="width: 150px; height: 150px;">
+    <img src='@routes.Assets.versioned(s"images/${student.index}.jpg")'
+         onerror="this.src='/assets/images/avatar.png';"
+         alt="@student.name"
+    />
+    </figure>
+    <div style="margin-left: 30px;">
+        <p>
+            <b>Index:</b> @student.index</br>
+            <b>Year:</b> @student.year
+        </p>
+        <b>Lectures:</b>
+        <ul>
+            @for(l <- lectures) {
+                <li><a href="/lecture/@l.id">@l.name</a></li>
+            }
+        </ul>
+    </div>
+</div>
+
+}

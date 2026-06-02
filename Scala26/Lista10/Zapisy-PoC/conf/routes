@@ -1,0 +1,13 @@
+# Index page
+GET     /                           controllers.FormController.index
+
+# Access assets in "/public" folder
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+# Students
+GET     /students                   controllers.FormController.students
+GET     /student/*index             controllers.FormController.student(index: Int)
+
+# Lectures
+GET     /lectures                   controllers.FormController.lectures
+GET     /lecture/*id                controllers.FormController.lecture(id: String)

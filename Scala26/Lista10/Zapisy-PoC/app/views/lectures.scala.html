@@ -1,0 +1,20 @@
+@main("Lectures") {
+
+<h1>Lectures</h1>
+
+<table>
+    <tr>
+        <td></td>
+        <td><b>ID</b></td>
+        <td><b>Name</b></td>
+    </tr>
+    @for((l, index) <- DB.Lectures.zipWithIndex) {
+        <tr>
+            <td>@(index + 1)</td>
+            <td>@l.id</td>
+            <td><a href="/lecture/@l.id">@l.name</a></td>
+        </tr>
+    }
+</table>
+
+}

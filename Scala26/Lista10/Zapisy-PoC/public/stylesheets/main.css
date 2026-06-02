@@ -1,0 +1,19 @@
+.img-bg {
+    /* Opacity */
+    opacity: 20%;
+    /* Make it un-clickable/draggable to not interrupt usage  */
+    pointer-events: none; 
+
+    /* Absolute position and max size */
+    position: absolute;
+    height: 100%;
+
+    /* Prevent squeezing the image */
+    object-fit: cover;
+    object-position: center;
+
+    /* Vertical centering somehow */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

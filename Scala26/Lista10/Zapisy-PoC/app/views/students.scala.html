@@ -1,0 +1,18 @@
+@main("Students") {
+
+<h1>Students</h1>
+
+<table>
+    <tr>
+        <td></td>
+        <td><b>Name</b></td>
+    </tr>
+    @for((s, index) <- DB.Students.zipWithIndex) {
+        <tr>
+            <td>@(index + 1)</td>
+            <td><a href="/student/@s.index">@s.name</a></td>
+        <tr>
+    }
+</table>
+
+}
