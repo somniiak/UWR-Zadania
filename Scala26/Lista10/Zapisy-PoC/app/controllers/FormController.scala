@@ -14,20 +14,25 @@ class FormController @Inject()(val controllerComponents: ControllerComponents)
   def students = Action:
     Ok(views.html.students())
 
-  def student(index: Int) = Action:
-    DB.Students.find(_.index == index) match
-      case Some(student) =>
+  def student(index: String) = Action:
+    index.toIntOption match
+      case Some(idx) =>
 
-        val studentLectures =
-          DB.Enrollments
-            .filter(_.students.contains(student))
-            .flatMap(enrollment =>
-              DB.Lectures.find(_.id == enrollment.id)
-            )
+        DB.Students.find(_.index == idx) match
+          case Some(student) =>
 
-        Ok(views.html.student(student, studentLectures))
+            val studentLectures =
+              DB.Enrollments
+                .filter(_.students.contains(student))
+                .flatMap(enrollment =>
+                  DB.Lectures.find(_.id == enrollment.id)
+                )
+
+            Ok(views.html.student(student, studentLectures))
+          case None =>
+            NotFound(s"Student with index $index not found")
       case None =>
-        NotFound(s"Student with index $index not found")
+        NotFound(s"Not a valid index")
 
   def lectures = Action:
     Ok(views.html.lectures())
