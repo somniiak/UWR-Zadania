@@ -6,7 +6,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 # Students
 GET     /students                   controllers.FormController.students
-GET     /student/*index             controllers.FormController.student(index: Int)
+GET     /student/*index             controllers.FormController.student(index: String)
 
 # Lectures
 GET     /lectures                   controllers.FormController.lectures
